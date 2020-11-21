@@ -1,7 +1,7 @@
 intro
 Recommend
 recap
-applications
+set-up
 example-one
 example-two
 example-three
@@ -9,6 +9,7 @@ example-four
 example-five
 example-seven
 example-seven-1
-literature
-final-words
-a-caucus-race-and-a-long-tale
+graphics-with-ggplot2
+challenge
+answer
+q-a
