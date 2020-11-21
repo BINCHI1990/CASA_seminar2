@@ -1,9 +1,9 @@
 --- 
 title: "Customizing ggplot2 plots in R for scientific research"
 author: "Bin Chi"
-date: 22/11/2020
+date: "25/11/2020"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
-
+# {-}
+<img src="casa_logo.jpg" width="100" >
