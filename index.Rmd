@@ -1,7 +1,7 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
-date: "`r Sys.Date()`"
+title: "Customizing ggplot2 plots in R for scientific research"
+author: "Bin Chi"
+date: 22/11/2020
 site: bookdown::bookdown_site
 ---
 
