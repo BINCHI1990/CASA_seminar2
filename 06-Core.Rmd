@@ -1,3 +1,3 @@
-# Literature
+# Graphics with ggplot2
 
 Here is a review of existing methods.
