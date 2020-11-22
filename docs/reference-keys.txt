@@ -1,4 +1,3 @@
-recap
 set-up
 example-one
 example-two
@@ -8,6 +7,9 @@ example-five
 example-seven
 example-seven-1
 graphics-with-ggplot2
+basic-ggplot2-plots
+section-1
+section-2
 challenge
 answer
 q-a

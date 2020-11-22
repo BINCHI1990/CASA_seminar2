@@ -1,6 +1,6 @@
-# 1 Introduction {-}
-<br>
-This second CASACASA0005 GI Systems and Science  seminar. It aims advanced your to data visualization skill in R using the ggplot2 package. 
+# Introduction 
+<br><br>
+This second CASA0005 GI Systems and Science  seminar. It aims advanced your to data visualization skill in R using the ggplot2 package. 
 <br><br>
 By the end of the seminar you will be able to:
 <br>

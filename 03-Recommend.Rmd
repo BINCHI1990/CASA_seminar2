@@ -1,5 +1,7 @@
-# 2 Recommend resources {-}
-<br>
+# Recommend resources
+<br><br>
+
+Here listed reference will mentioned in this seminar.
  -   [Data Visualization with ggplot2 Cheat Sheet - RStudio](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
 <br>
  -   [ggplot2: elegant graphics for data analysist](https://ggplot2-book.org/index.html)
@@ -7,3 +9,9 @@
  -   [Data Visualization in R with ggplot2](https://altaf-ali.github.io/ggplot_tutorial/index.html)
 <br>
  -   [Top 50 ggplot2 Visualizations - The Master List (With Full R Code)](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
+<br>
+
+
+How to find more: 
+ -   [GOOGLE)](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
+<br>

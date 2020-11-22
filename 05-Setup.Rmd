@@ -14,4 +14,6 @@ Some _significant_ applications are demonstrated in this chapter.
 
 ## Example seven
 
-## Example seven
+## Data
+
+In this semianr, we used the two house price dataset to represent how to custmolizing the ggplots. It is aggregate data basing on my PhD research.
