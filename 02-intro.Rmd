@@ -4,6 +4,11 @@ This second CASA0005 GI Systems and Science  seminar. It aims advanced your to d
 <br><br>
 By the end of the seminar you will be able to:
 <br>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+
 - Advanced your knowledge about ggplot2 in R 
 <br>
 - Know ten advanced customization  in ggplot
@@ -11,3 +16,4 @@ By the end of the seminar you will be able to:
 - Create a high resolution graph for your research
 <br>
 - Trouble-soluting by yourself
+</div>

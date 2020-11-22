@@ -1,6 +1,89 @@
 # Graphics with ggplot2
 
-## basic ggplot2 plots
+## Basic knowledge of ggplot2 
+There are two ways to produce plots in ggplot2, one is `qplot()` and the other is `ggplot()`. In this seminar we focus on `ggplot`.
+  
+### Basic Components of a ggplot2 Plot
+
+
+
+
+
+[Data Visualization with ggplot2 Cheat Sheet - RStudio](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
+
+
+### Building a simple ggplot plot
+Now let us start with creating a scatter plot using ggplot().The scatter plot is created to exploring the relationship between transaction price and total floor area in two different local authorities.  
+#### step 1 plot background  
+```{r}
+ggplot(housedata1,aes(x=tfarea,y=price))
+```
+#### step 2 add a layer
+
+```{r}
+ggplot(housedata1,aes(x=tfarea,y=price))+
+  geom_point()
+```
+
+#### step 3  add the thid layer(linear regression line)
+
+```{r}
+ggplot(housedata1,aes(x=tfarea,y=price))+
+  geom_point()+
+  geom_smooth(method="lm")
+```
+
+
+
+#### step 4 add anoher layer
+```{r}
+ggplot(housedata1,aes(x=tfarea,y=price))+
+  geom_point()+
+  geom_smooth(method="lm")+
+  facet_wrap(~ldnm)
+```
+#### step 4  add a linear regression line
+
+
+####  
+
+###
+####
+
+
+####
+
+####
+
+
+
+### Extensions to ggplot2
+
+ggthemes – more diagram themes, allows you to make graphics appear as if produced by Stata,
+Excel, The Economist, etc.
+ggformula – an interface similar to lattice
+ggpmisc – support for time series and polynomial ts
+ggtern – ternary diagrams for compositional data
+ggforce – various “geom” layers, including pie charts, and other extensions
+ggExtra – add marginal plots etc
+ GGally – special purpose plots, coecient plots, model diagnostics, networks, correlation matrices
+ plotly has the function ggplotly to translate “ggplot” results into JavaScript diagrams suitable for
+websites.
+
+
+
+Since ggplot only works with **data** frames, 
+
+
+```{r}
+#test the data set is a data frame
+is.data.frame(housedata1)
+is.data.frame(housedata2)
+```
+
+
+
+
 
 ### 
 
@@ -12,12 +95,24 @@ Here is a review of existing methods.
 
 
 
-## Saving graphs
+## Sub and superscript
 
 
 
 ## Saving graphs
+TIFF files exported directly from RStudio will only achieve a resolution of 72dpi.
 
 
+In RStudio, you can click on the “Export” button and export your plots
+
+
+Using ggsave is used to save a ggplot2 graph from the screen to a file
+
+```{r}
+ggsave("Figure_B.tiff",units="in", width=14, height=6, dpi=500, compression = 'lzw')  
+```
 
 ## Sum up
+
+
+

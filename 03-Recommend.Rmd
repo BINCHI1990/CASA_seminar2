@@ -1,7 +1,7 @@
 # Recommend resources
-<br><br>
+<br>
 
-Here listed reference will mentioned in this seminar.
+## Resouces about ggplot2 packge
  -   [Data Visualization with ggplot2 Cheat Sheet - RStudio](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
 <br>
  -   [ggplot2: elegant graphics for data analysist](https://ggplot2-book.org/index.html)
@@ -11,7 +11,18 @@ Here listed reference will mentioned in this seminar.
  -   [Top 50 ggplot2 Visualizations - The Master List (With Full R Code)](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
 <br>
 
+## Resouces about graphs or data visualization in academic research
 
-How to find more: 
- -   [GOOGLE)](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
+ -   [Ten guidelines for effective data visualization in scientific publications](https://www.sciencedirect.com/science/article/pii/S1364815210003270)
 <br>
+ -  [Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128)
+<br>
+ -  [How to Write a Paper](http://www-mech.eng.cam.ac.uk/mmd/ashby-paper-V6.pdf)
+<br>
+ -  [R Graphics Cookbook, 2nd edition](https://r-graphics.org/index.html)
+<br>
+
+
+## How to find more useful resources 
+<br>
+ -   [GOOGLE](https://www.google.com/)
