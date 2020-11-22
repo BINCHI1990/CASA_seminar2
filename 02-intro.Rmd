@@ -1,8 +1,13 @@
-# Introduction {#intro}
-
-This second CASA GIS seminar aims advanced your to data visualization skill in R using the ggplot2 package. By the end of the seminar you will be able to:
-
-- Advanced your knowledge about ggplot2 in R  
+# Introduction {-}
+<br>
+This second CASACASA0005 GI Systems and Science  seminar. It aims advanced your to data visualization skill in R using the ggplot2 package. 
+<br><br>
+By the end of the seminar you will be able to:
+<br>
+- Advanced your knowledge about ggplot2 in R 
+<br>
 - Know ten advanced customization  in ggplot
+<br>
 - Create a high resolution graph for your research
+<br>
 - Trouble-soluting by yourself
