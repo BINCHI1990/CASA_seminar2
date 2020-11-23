@@ -188,7 +188,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">4</span> Getting started</h1>
 <div id="installing-ggplot2-package" class="section level2">
 <h2><span class="header-section-number">4.1</span> Installing ggplot2 package</h2>
-<p>If you have install ggplot2 package before, you can jump to the next step:</p>
+<p>If you have installed ggplot2 package before, you can jump to the next step.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="getting-started.html#cb1-1"></a><span class="co">#install.packages(&quot;ggplot2&quot;)</span></span></code></pre></div>
 </div>
 <div id="loading-ggplot2-package" class="section level2">
@@ -196,24 +196,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Load the packages for today’s seminar.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="getting-started.html#cb2-1"></a><span class="co">#load the package for this seminar</span></span>
 <span id="cb2-2"><a href="getting-started.html#cb2-2"></a><span class="kw">library</span>(ggplot2)</span></code></pre></div>
-<strong>Note:</strong> Once you loaded the package successful, there will be a check mark display before the package under your Packages tab at the bottom right pane.
+<strong>Note:</strong> Once you loaded the package successfully, there will be a check mark display before the package under your Packages tab at the bottom right pane.
 <center>
 <img src="loadpackage.png" />
 </center>
 </div>
 <div id="dataset" class="section level2">
 <h2><span class="header-section-number">4.3</span> Dataset</h2>
-<p>Let’s start by loading two datasets. The first dataset records 924 transaction in 2009 for in two local authorities in England. The second the data records the median house price per square meter for each region in England between 2009 and 2016. These two datasets are derived from a linked house price in England (<a href="https://www.ucl.ac.uk/bartlett/casa/publications/2019/sep/casa-working-paper-213">CASA working paper213</a>).</p>
+<p>Let’s start by loading two datasets. The first dataset records 924 transaction in 2009 for two local authorities in England. The second the data records the median house price per square meter for each region in England between 2009 and 2016. These two datasets are derived from a linked house price in England (<a href="https://www.ucl.ac.uk/bartlett/casa/publications/2019/sep/casa-working-paper-213">CASA working paper213</a>).</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="getting-started.html#cb3-1"></a><span class="co"># read in the first dataset</span></span>
 <span id="cb3-2"><a href="getting-started.html#cb3-2"></a>housedata1&lt;-<span class="kw">read.csv</span>(<span class="st">&quot;data1.csv&quot;</span>)</span>
 <span id="cb3-3"><a href="getting-started.html#cb3-3"></a><span class="co"># read in the second dataset</span></span>
 <span id="cb3-4"><a href="getting-started.html#cb3-4"></a>housedata2 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data2.csv&quot;</span>)</span></code></pre></div>
-<p>The first house price dataset contains seven fields.They are separately refers to transaction price, transaction date.transaction year, property’s total floor area, the Census 2011 local authority district code, the Census 2011 local authority district name and region name.</p>
+<p>The first house price dataset contains seven fields. They separately refer to transaction price, transaction date.transaction year, property’s total floor area, the Census 2011 local authority district code, the Census 2011 local authority district name and region name.</p>
 <center>
 <img src="data1.png" />
 </center>
 <br>
-The second house price dataset contains four fields.They are separately refers to the Census 2011 region code, transaciton year, house price per square meter and region name.
+The second house price dataset contains four fields.They separately refer to the Census 2011 region code, transaction year, house price per square meter and region name.
 <center>
 <img src="data2.png" />
 </center>

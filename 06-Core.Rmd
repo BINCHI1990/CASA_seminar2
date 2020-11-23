@@ -8,9 +8,9 @@ There are two ways to produce plots in ggplot2, one is `qplot()` and the other i
 >ggplot2 is based on the grammar of graphics, the idea that you can build every graph from the same few components: a **data** set, a set of **geoms**—visual marks that represent data points, and a coordinate system.
   
 ## Building a simple ggplot plot
-Now let us start with creating a scatter plot using ggplot().The scatter plot is created to exploring the relationship between transaction price and total floor area in two different local authorities. 
+Now let us start with creating a scatter plot using ggplot().The scatter plot is created to explore the relationship between transaction price and total floor area in two different local authorities. 
 <br> 
-### Make sure your object is data fromas
+### Make sure your object is data frames
 Since ggplot only works with **data** frames, we use `is.data.frame()`to check the whether the data is a data frame.If it is not, you need to tranfer it to a data frame
 ```{r}
 #test the data set is a data frame
@@ -31,7 +31,7 @@ ggplot(housedata1,aes(x=tfarea,y=price))+
 ```
 
 ### Color the point
-In ggplot, we can additional aesthetic values according to other properties from our dataset.Given *housedata1* records transaction price in two local authorities, we can color the points differently depend on the ldnm field.
+In ggplot, additional aesthetic values can be added in based on other properties from our dataset.Given that housedata1 records transaction price in two local authorities, we can color the points differently depending on the ldnm field.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price))+
   geom_point(aes(color=ldnm))
@@ -68,7 +68,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
 ```
 
 ### Change the point size
-The size of the points can be controlled with the `size` aesthetic. The default value of size is 2. The following code set it to 1.5.
+The size of the points can be controlled with the `size` aesthetic. The default value of size is 2. The size can be set to 1.5 by the following code.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -77,7 +77,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
 ```
 <br>
 ### Change the point shape
-The size of the points can be controlled with the `shape` aesthetic. The default shape is solid circles and you can change it by accorroding to [Point Shape Options in ggplot](https://blog.albertkuo.me/post/point-shape-options-in-ggplot/). The following code to show you how to plot the point as solid squares.
+The size of the points can be controlled with the `shape` aesthetic. The default shape is solid circles and you can change with [Point Shape Options in ggplot](https://blog.albertkuo.me/post/point-shape-options-in-ggplot/). The following code show you how to plot the point as solid squares.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2, shape=15)+
