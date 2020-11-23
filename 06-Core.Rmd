@@ -137,7 +137,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   ylab("Transaction price (£)")
 ```
 <br>
-If you want to change scale the y axis in ggplot 2 to thousands, you can use `scale_y_continuous`.  
+If you want to change scale the y axis to thousands, you can use `scale_y_continuous`.  
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -179,7 +179,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 ```
 <br>
 ### Change x-axis breaks 
-You can use `breaks` function  change the x or y axis breaks label.
+You can use `breaks` function to change the x or y axis breaks labels.
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -212,7 +212,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   scale_x_continuous(breaks = seq(50,300,50),limits = c(0, 300))
 ```
 <br>
-You can do the similiar for you y axis.
+You can follow the same step for your y axis.
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -225,8 +225,10 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 ```
 
 <br>
+##
 ### Add in title
-YOU can use `ggtitle()` to add a title in the plot. Below is the code to do so.
+
+You can use `ggtitle()` to add a title in the plot. Below is the code.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -239,7 +241,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 
 <br>
 ### Change themes 
-There are eight themes can be directlty used to give the plot a sonsistent customized look.`theme_grey()` is the default ggplot2 theme, you can use `theme_bw()` to remove it.
+There are eight themes that can be directlty used to give the plot a customized look.`theme_grey()` is the default ggplot2 theme, you can use `theme_bw()` to remove it.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -250,7 +252,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   theme_bw()
 ```
 
-Blow are listed the other six theme, you can choose one you prefer for your academic writing.
+Blow are listed the rest of six other themes, from which you can choose your faviate for your academic writing.
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -288,7 +290,6 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
   xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
-  ggtitle("Transaction price against total floor area in local authorities, 2009")+
   theme_minimal()
 ```
 
@@ -298,7 +299,6 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
   xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
-  ggtitle("Transaction price against total floor area in local authorities, 2009")+
   theme_classic()
 ```
 
@@ -308,7 +308,6 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
   xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
-  ggtitle("Transaction price against total floor area in local authorities, 2009")+
   theme_void()
 ```
 <br>
@@ -317,7 +316,7 @@ The R package **ggthemes** provides another gallery of custom ggplot themes.You 
 
 ### Change the font size
 
-You can manual customize the ggplot by modify the components in [theme()](https://ggplot2.tidyverse.org/reference/theme.html). Below I give a series if example on how to change the font size in the plot, let us do step-by-step.
+You can manual customize the ggplot by modify the components in [theme()](https://ggplot2.tidyverse.org/reference/theme.html). Below I give a series of examples on how to change the font size in the plot, let us do step-by-step.
 <br>
 (1) Change the font size of text in x and y axis and color in red
 ```{r}
@@ -382,7 +381,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 ##
 ```
 <br>
-You may wondering how to change the lengend text in above plot. Below is the answer:
+You may wonder about how to change the lengend text in above plot. Below is the answer:
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -398,7 +397,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 <br>
 
 ### Add in the Pearson correlation coefficient result in the plot
-Since the aims of plot this satter plot is to explore the relationship between transaction price and property's total floor area. Pearson correlation coefficient is more suitable to consider in the plot.
+Since the aims of this satter plot is to explore the relationship between transaction price and property’s total floor area. Pearson correlation coefficient is more suitable to consider in the plot.
 ```{r}
 # calutate the Pearson correlation coefficient for each local authority 
 cor.test(housedata1[housedata1$laua=="E07000208",]$price,housedata1[housedata1$laua=="E07000208",]$tfarea,method="pearson")$p.value
@@ -419,8 +418,6 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000))+
  
 
 ```
-
-
 ## Saving graphs
 TIFF files exported directly from RStudio will only achieve a resolution of 72dpi.dpi is a measure of resolution – the higher the dpi, the sharper the image. ggsave is used to save a 500 dpi graph from the screen to a file.
 
@@ -432,13 +429,4 @@ ggsave("Figure_A.tiff",units="in", width=14, height=6, dpi=500, compression = 'l
 ## Extensions
 
 [12 Extensions to ggplot2 for More Powerful R Visualizations](https://mode.com/blog/r-ggplot-extension-packages/)
-ggthemes – more diagram themes, allows you to make graphics appear as if produced by Stata,
-Excel, The Economist, etc.
-ggformula – an interface similar to lattice
-ggpmisc – support for time series and polynomial ts
-ggtern – ternary diagrams for compositional data
-ggforce – various “geom” layers, including pie charts, and other extensions
-ggExtra – add marginal plots etc
-GGally – special purpose plots, coecient plots, model diagnostics, networks, correlation matrices
-plotly has the function ggplotly to translate “ggplot” results into JavaScript diagrams suitable for
-websites.
+

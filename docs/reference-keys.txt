@@ -18,7 +18,6 @@ change-the-point-size
 formatting-y-axis-and-labels
 change-the-font-size
 add-in-the-pearson-correlation-coefficient-result-in-the-plot
-saving-graphs
 extensions
 challenge
 answer
