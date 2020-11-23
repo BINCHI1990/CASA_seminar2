@@ -156,22 +156,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.3" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#customizing-the-graph"><i class="fa fa-check"></i><b>5.3</b> Customizing the graph</a><ul>
 <li class="chapter" data-level="5.3.1" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-point-color"><i class="fa fa-check"></i><b>5.3.1</b> Change the point color</a></li>
 <li class="chapter" data-level="5.3.2" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-point-size"><i class="fa fa-check"></i><b>5.3.2</b> Change the point size</a></li>
-<li class="chapter" data-level="5.3.3" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-x-axis-breaks"><i class="fa fa-check"></i><b>5.3.3</b> Change x-axis breaks</a></li>
-<li class="chapter" data-level="5.3.4" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-x-axis-breaks-1"><i class="fa fa-check"></i><b>5.3.4</b> Change x-axis breaks</a></li>
-<li class="chapter" data-level="5.3.5" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-font-size"><i class="fa fa-check"></i><b>5.3.5</b> Change the font size</a></li>
-<li class="chapter" data-level="5.3.6" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#section-2"><i class="fa fa-check"></i><b>5.3.6</b> </a></li>
-<li class="chapter" data-level="5.3.7" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#section-4"><i class="fa fa-check"></i><b>5.3.7</b> </a></li>
-<li class="chapter" data-level="5.3.8" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-axis-titles"><i class="fa fa-check"></i><b>5.3.8</b> Change the axis titles</a></li>
-<li class="chapter" data-level="5.3.9" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#extensions-to-ggplot2"><i class="fa fa-check"></i><b>5.3.9</b> Extensions to ggplot2</a></li>
-<li class="chapter" data-level="5.3.10" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#section-8"><i class="fa fa-check"></i><b>5.3.10</b> </a></li>
+<li class="chapter" data-level="5.3.3" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-font-size"><i class="fa fa-check"></i><b>5.3.3</b> Change the font size</a></li>
+<li class="chapter" data-level="5.3.4" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#add-in-the-pearson-correlation-coefficient-result-in-the-plot"><i class="fa fa-check"></i><b>5.3.4</b> Add in the Pearson correlation coefficient result in the plot</a></li>
 </ul></li>
-<li class="chapter" data-level="5.4" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#sub-and-superscript"><i class="fa fa-check"></i><b>5.4</b> Sub and superscript</a></li>
-<li class="chapter" data-level="5.5" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#saving-graphs"><i class="fa fa-check"></i><b>5.5</b> Saving graphs</a></li>
-<li class="chapter" data-level="5.6" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#sum-up"><i class="fa fa-check"></i><b>5.6</b> Sum up</a></li>
+<li class="chapter" data-level="5.4" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#saving-graphs"><i class="fa fa-check"></i><b>5.4</b> Saving graphs</a></li>
+<li class="chapter" data-level="5.5" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#extensions"><i class="fa fa-check"></i><b>5.5</b> Extensions</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="challenge.html"><a href="challenge.html"><i class="fa fa-check"></i><b>6</b> Challenge</a></li>
 <li class="chapter" data-level="7" data-path="answer.html"><a href="answer.html"><i class="fa fa-check"></i><b>7</b> Answer</a></li>
-<li class="chapter" data-level="8" data-path="q-a-.html"><a href="q-a-.html"><i class="fa fa-check"></i><b>8</b> Q &amp; A [-]</a></li>
+<li class="chapter" data-level="" data-path="q-a.html"><a href="q-a.html"><i class="fa fa-check"></i>Q &amp; A</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -193,6 +186,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="challenge" class="section level1">
 <h1><span class="header-section-number">6</span> Challenge</h1>
+<p>Let us move to the challenge part to exam your understanding of this seminar. Below are two graphs created by ggplot() based on housedata2.</p>
+<p>##Challenge 1</p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="challenge.html#cb70-1"></a><span class="kw">head</span>(housedata2)</span></code></pre></div>
+<pre><code>##         gor yearchi priceper     region
+## 1 E12000001    2009 1425.943 North East
+## 2 E12000001    2012 1392.045 North East
+## 3 E12000001    2015 1480.584 North East
+## 4 E12000001    2016 1486.486 North East
+## 5 E12000001    2011 1390.934 North East
+## 6 E12000001    2014 1460.396 North East</code></pre>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="challenge.html#cb72-1"></a><span class="kw">ggplot</span>(<span class="dt">data=</span>housedata2, <span class="kw">aes</span>(<span class="dt">x=</span> yearchi, <span class="dt">y=</span>priceper,<span class="dt">group=</span>region,<span class="dt">color=</span>region)) <span class="op">+</span><span class="kw">geom_point</span>(<span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span></span>
+<span id="cb72-2"><a href="challenge.html#cb72-2"></a><span class="st">  </span><span class="kw">geom_line</span>( <span class="dt">size =</span> <span class="dv">1</span>)<span class="op">+</span></span>
+<span id="cb72-3"><a href="challenge.html#cb72-3"></a><span class="st">  </span><span class="kw">scale_colour_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;#F8766D&quot;</span>, <span class="st">&quot;#D39200&quot;</span>,<span class="st">&quot;#000000&quot;</span>,<span class="st">&quot;#93AA00&quot;</span>, <span class="st">&quot;#00BA38&quot;</span> ,<span class="st">&quot;#00C19F&quot;</span> ,<span class="st">&quot;#00B9E3&quot;</span>, <span class="st">&quot;#619CFF&quot;</span> ,<span class="st">&quot;#DB72FB&quot;</span>, <span class="st">&quot;#FF61C3&quot;</span>))<span class="op">+</span></span>
+<span id="cb72-4"><a href="challenge.html#cb72-4"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
+<span id="cb72-5"><a href="challenge.html#cb72-5"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>), <span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">legend.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>))<span class="op">+</span></span>
+<span id="cb72-6"><a href="challenge.html#cb72-6"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;House price per square metre&quot;</span>)<span class="op">+</span></span>
+<span id="cb72-7"><a href="challenge.html#cb72-7"></a><span class="st">  </span><span class="kw">guides</span>(<span class="dt">color=</span><span class="kw">guide_legend</span>(<span class="st">&quot;Location&quot;</span>)) <span class="op">+</span></span>
+<span id="cb72-8"><a href="challenge.html#cb72-8"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">labels =</span> scales<span class="op">::</span>comma,)<span class="op">+</span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">2009</span>,<span class="dv">2010</span>,<span class="dv">2011</span>,<span class="dv">2012</span>,<span class="dv">2013</span>,<span class="dv">2014</span>,<span class="dv">2015</span>,<span class="dv">2016</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-110-1.png" width="672" />
+<br>
+##Challenge 2</p>
 
 </div>
             </section>

@@ -156,22 +156,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.3" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#customizing-the-graph"><i class="fa fa-check"></i><b>5.3</b> Customizing the graph</a><ul>
 <li class="chapter" data-level="5.3.1" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-point-color"><i class="fa fa-check"></i><b>5.3.1</b> Change the point color</a></li>
 <li class="chapter" data-level="5.3.2" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-point-size"><i class="fa fa-check"></i><b>5.3.2</b> Change the point size</a></li>
-<li class="chapter" data-level="5.3.3" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-x-axis-breaks"><i class="fa fa-check"></i><b>5.3.3</b> Change x-axis breaks</a></li>
-<li class="chapter" data-level="5.3.4" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-x-axis-breaks-1"><i class="fa fa-check"></i><b>5.3.4</b> Change x-axis breaks</a></li>
-<li class="chapter" data-level="5.3.5" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-font-size"><i class="fa fa-check"></i><b>5.3.5</b> Change the font size</a></li>
-<li class="chapter" data-level="5.3.6" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#section-2"><i class="fa fa-check"></i><b>5.3.6</b> </a></li>
-<li class="chapter" data-level="5.3.7" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#section-4"><i class="fa fa-check"></i><b>5.3.7</b> </a></li>
-<li class="chapter" data-level="5.3.8" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-axis-titles"><i class="fa fa-check"></i><b>5.3.8</b> Change the axis titles</a></li>
-<li class="chapter" data-level="5.3.9" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#extensions-to-ggplot2"><i class="fa fa-check"></i><b>5.3.9</b> Extensions to ggplot2</a></li>
-<li class="chapter" data-level="5.3.10" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#section-8"><i class="fa fa-check"></i><b>5.3.10</b> </a></li>
+<li class="chapter" data-level="5.3.3" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-font-size"><i class="fa fa-check"></i><b>5.3.3</b> Change the font size</a></li>
+<li class="chapter" data-level="5.3.4" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#add-in-the-pearson-correlation-coefficient-result-in-the-plot"><i class="fa fa-check"></i><b>5.3.4</b> Add in the Pearson correlation coefficient result in the plot</a></li>
 </ul></li>
-<li class="chapter" data-level="5.4" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#sub-and-superscript"><i class="fa fa-check"></i><b>5.4</b> Sub and superscript</a></li>
-<li class="chapter" data-level="5.5" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#saving-graphs"><i class="fa fa-check"></i><b>5.5</b> Saving graphs</a></li>
-<li class="chapter" data-level="5.6" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#sum-up"><i class="fa fa-check"></i><b>5.6</b> Sum up</a></li>
+<li class="chapter" data-level="5.4" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#saving-graphs"><i class="fa fa-check"></i><b>5.4</b> Saving graphs</a></li>
+<li class="chapter" data-level="5.5" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#extensions"><i class="fa fa-check"></i><b>5.5</b> Extensions</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="challenge.html"><a href="challenge.html"><i class="fa fa-check"></i><b>6</b> Challenge</a></li>
 <li class="chapter" data-level="7" data-path="answer.html"><a href="answer.html"><i class="fa fa-check"></i><b>7</b> Answer</a></li>
-<li class="chapter" data-level="8" data-path="q-a-.html"><a href="q-a-.html"><i class="fa fa-check"></i><b>8</b> Q &amp; A [-]</a></li>
+<li class="chapter" data-level="" data-path="q-a.html"><a href="q-a.html"><i class="fa fa-check"></i>Q &amp; A</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -215,25 +208,25 @@ Since ggplot only works with <strong>data</strong> frames, we use <code>is.data.
 <p><br>
 ### Plot background and set the x and y axis</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="graphics-with-ggplot2.html#cb8-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price))</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-16-1.png" width="672" />
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-76-1.png" width="672" />
 <br>
 ### Add a layer (point)</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="graphics-with-ggplot2.html#cb9-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price))<span class="op">+</span></span>
 <span id="cb9-2"><a href="graphics-with-ggplot2.html#cb9-2"></a><span class="st">  </span><span class="kw">geom_point</span>()</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-77-1.png" width="672" /></p>
 <div id="color-the-point" class="section level3">
 <h3><span class="header-section-number">5.2.1</span> Color the point</h3>
 <p>In ggplot, we can additional aesthetic values according to other properties from our dataset.Given <em>housedata1</em> records transaction price in two local authorities, we can color the points differently depend on the ldnm field.</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="graphics-with-ggplot2.html#cb10-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price))<span class="op">+</span></span>
 <span id="cb10-2"><a href="graphics-with-ggplot2.html#cb10-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm))</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-18-1.png" width="672" />
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-78-1.png" width="672" />
 ### Add a linear regression line
 To add a linear regression line to a scatter plot, we can do this by adding <code>stat_smooth()</code>,<code>method = lm</code> refers to fit the data linear model function</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="graphics-with-ggplot2.html#cb11-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb11-2"><a href="graphics-with-ggplot2.html#cb11-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm))<span class="op">+</span></span>
 <span id="cb11-3"><a href="graphics-with-ggplot2.html#cb11-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-19-1.png" width="672" />
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-79-1.png" width="672" />
 ### Split a single plot into many related plots</p>
 <p>You can split the scatter plot for each local authority with <code>facet_wrap()</code>.</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="graphics-with-ggplot2.html#cb13-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
@@ -241,7 +234,7 @@ To add a linear regression line to a scatter plot, we can do this by adding <cod
 <span id="cb13-3"><a href="graphics-with-ggplot2.html#cb13-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>)<span class="op">+</span></span>
 <span id="cb13-4"><a href="graphics-with-ggplot2.html#cb13-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-80-1.png" width="672" /></p>
 </div>
 </div>
 <div id="customizing-the-graph" class="section level2">
@@ -254,7 +247,7 @@ To add a linear regression line to a scatter plot, we can do this by adding <cod
 <span id="cb15-3"><a href="graphics-with-ggplot2.html#cb15-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>)<span class="op">+</span></span>
 <span id="cb15-4"><a href="graphics-with-ggplot2.html#cb15-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-81-1.png" width="672" /></p>
 </div>
 <div id="change-the-point-size" class="section level3">
 <h3><span class="header-section-number">5.3.2</span> Change the point size</h3>
@@ -264,7 +257,7 @@ To add a linear regression line to a scatter plot, we can do this by adding <cod
 <span id="cb17-3"><a href="graphics-with-ggplot2.html#cb17-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>)<span class="op">+</span></span>
 <span id="cb17-4"><a href="graphics-with-ggplot2.html#cb17-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-22-1.png" width="672" />
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-82-1.png" width="672" />
 <br>
 ### Change the point shape
 The size of the points can be controlled with the <code>shape</code> aesthetic. The default shape is solid circles and you can change it by accorroding to <a href="https://blog.albertkuo.me/post/point-shape-options-in-ggplot/">Point Shape Options in ggplot</a>. The following code to show you how to plot the point as solid squares.</p>
@@ -273,7 +266,7 @@ The size of the points can be controlled with the <code>shape</code> aesthetic. 
 <span id="cb19-3"><a href="graphics-with-ggplot2.html#cb19-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>)<span class="op">+</span></span>
 <span id="cb19-4"><a href="graphics-with-ggplot2.html#cb19-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-23-1.png" width="672" />
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-83-1.png" width="672" />
 <br>
 ### Modify fitted regression lines</p>
 <p>The default color of the fit line is blue. This can be change by setting <code>colour</code>,The following code set a red fit line.</p>
@@ -283,275 +276,328 @@ The size of the points can be controlled with the <code>shape</code> aesthetic. 
 <span id="cb21-4"><a href="graphics-with-ggplot2.html#cb21-4"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">colour =</span> <span class="st">&quot;red&quot;</span>)<span class="op">+</span></span>
 <span id="cb21-5"><a href="graphics-with-ggplot2.html#cb21-5"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-84-1.png" width="672" /></p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="graphics-with-ggplot2.html#cb23-1"></a><span class="co"># method 2</span></span>
 <span id="cb23-2"><a href="graphics-with-ggplot2.html#cb23-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb23-3"><a href="graphics-with-ggplot2.html#cb23-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>, <span class="dt">shape=</span><span class="dv">15</span>)<span class="op">+</span></span>
 <span id="cb23-4"><a href="graphics-with-ggplot2.html#cb23-4"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">colour =</span> <span class="st">&quot;#FF0000&quot;</span>)<span class="op">+</span></span>
 <span id="cb23-5"><a href="graphics-with-ggplot2.html#cb23-5"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-24-2.png" width="672" />
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-84-2.png" width="672" />
 The grey area near the fit line is confidence region.you can disabled it with <code>se = FALSE</code></p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="graphics-with-ggplot2.html#cb25-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb25-2"><a href="graphics-with-ggplot2.html#cb25-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb25-3"><a href="graphics-with-ggplot2.html#cb25-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
 <span id="cb25-4"><a href="graphics-with-ggplot2.html#cb25-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-25-1.png" width="672" />
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-85-1.png" width="672" />
 <br>
 ### Change the axis titles
 labs function can be used to change axis labels.Here are two ways to change the axis title.</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="graphics-with-ggplot2.html#cb27-1"></a><span class="co">#Method 1</span></span>
 <span id="cb27-2"><a href="graphics-with-ggplot2.html#cb27-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb27-3"><a href="graphics-with-ggplot2.html#cb27-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb27-4"><a href="graphics-with-ggplot2.html#cb27-4"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb27-5"><a href="graphics-with-ggplot2.html#cb27-5"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb27-6"><a href="graphics-with-ggplot2.html#cb27-6"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Total floor area&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Transaction price&quot;</span>)</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="graphics-with-ggplot2.html#cb29-1"></a><span class="co">#Method 2</span></span>
-<span id="cb29-2"><a href="graphics-with-ggplot2.html#cb29-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb29-3"><a href="graphics-with-ggplot2.html#cb29-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>, <span class="dt">shape=</span><span class="dv">15</span>)<span class="op">+</span></span>
-<span id="cb29-4"><a href="graphics-with-ggplot2.html#cb29-4"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb29-5"><a href="graphics-with-ggplot2.html#cb29-5"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb29-6"><a href="graphics-with-ggplot2.html#cb29-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Total floor area&quot;</span>)<span class="op">+</span></span>
-<span id="cb29-7"><a href="graphics-with-ggplot2.html#cb29-7"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;Transaction price&quot;</span>)</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-2.png" width="672" />
+<span id="cb27-4"><a href="graphics-with-ggplot2.html#cb27-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb27-5"><a href="graphics-with-ggplot2.html#cb27-5"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Total floor area&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Transaction price&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-86-1.png" width="672" /></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="graphics-with-ggplot2.html#cb28-1"></a><span class="co">#Method 2</span></span>
+<span id="cb28-2"><a href="graphics-with-ggplot2.html#cb28-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb28-3"><a href="graphics-with-ggplot2.html#cb28-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>, <span class="dt">shape=</span><span class="dv">15</span>)<span class="op">+</span></span>
+<span id="cb28-4"><a href="graphics-with-ggplot2.html#cb28-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb28-5"><a href="graphics-with-ggplot2.html#cb28-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Total floor area&quot;</span>)<span class="op">+</span></span>
+<span id="cb28-6"><a href="graphics-with-ggplot2.html#cb28-6"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;Transaction price&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-86-2.png" width="672" />
 ### Add axis units</p>
 <div id="formatting-y-axis-and-labels" class="section level4">
 <h4><span class="header-section-number">5.3.2.1</span> Formatting y axis and labels</h4>
 <p>Below is the code for add in the y axis unit in ggplot().</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="graphics-with-ggplot2.html#cb31-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb31-2"><a href="graphics-with-ggplot2.html#cb31-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb31-3"><a href="graphics-with-ggplot2.html#cb31-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb31-4"><a href="graphics-with-ggplot2.html#cb31-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb31-5"><a href="graphics-with-ggplot2.html#cb31-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Total floor area&quot;</span>)<span class="op">+</span></span>
-<span id="cb31-6"><a href="graphics-with-ggplot2.html#cb31-6"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;Transaction price (£)&quot;</span>)</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-27-1.png" width="672" />
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="graphics-with-ggplot2.html#cb29-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb29-2"><a href="graphics-with-ggplot2.html#cb29-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb29-3"><a href="graphics-with-ggplot2.html#cb29-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb29-4"><a href="graphics-with-ggplot2.html#cb29-4"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Total floor area&quot;</span>)<span class="op">+</span></span>
+<span id="cb29-5"><a href="graphics-with-ggplot2.html#cb29-5"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;Transaction price (£)&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-87-1.png" width="672" />
 <br>
 If you want to change scale the y axis in ggplot 2 to thousands, you can use <code>scale_y_continuous</code>.</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="graphics-with-ggplot2.html#cb33-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb33-2"><a href="graphics-with-ggplot2.html#cb33-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb33-3"><a href="graphics-with-ggplot2.html#cb33-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb33-4"><a href="graphics-with-ggplot2.html#cb33-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb33-5"><a href="graphics-with-ggplot2.html#cb33-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> <span class="cf">function</span>(y) y <span class="op">/</span><span class="st"> </span><span class="dv">1000</span>)<span class="op">+</span></span>
-<span id="cb33-6"><a href="graphics-with-ggplot2.html#cb33-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Total floor area&quot;</span>)</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-28-1.png" width="672" />
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="graphics-with-ggplot2.html#cb30-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb30-2"><a href="graphics-with-ggplot2.html#cb30-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb30-3"><a href="graphics-with-ggplot2.html#cb30-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb30-4"><a href="graphics-with-ggplot2.html#cb30-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> <span class="cf">function</span>(y) y <span class="op">/</span><span class="st"> </span><span class="dv">1000</span>)<span class="op">+</span></span>
+<span id="cb30-5"><a href="graphics-with-ggplot2.html#cb30-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Total floor area&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-88-1.png" width="672" />
 <br>
 You can also format the y labels more readable, with some common formats in scales package.Below is the code for formatting y labels in comma.</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="graphics-with-ggplot2.html#cb35-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb35-2"><a href="graphics-with-ggplot2.html#cb35-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb35-3"><a href="graphics-with-ggplot2.html#cb35-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb35-4"><a href="graphics-with-ggplot2.html#cb35-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb35-5"><a href="graphics-with-ggplot2.html#cb35-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb35-6"><a href="graphics-with-ggplot2.html#cb35-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Total floor area&quot;</span>)</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-29-1.png" width="672" />
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="graphics-with-ggplot2.html#cb31-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb31-2"><a href="graphics-with-ggplot2.html#cb31-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb31-3"><a href="graphics-with-ggplot2.html#cb31-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb31-4"><a href="graphics-with-ggplot2.html#cb31-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb31-5"><a href="graphics-with-ggplot2.html#cb31-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Total floor area&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-89-1.png" width="672" />
 <br><br />
 - to transfer y axis to a percentage scale ,you can use <code>scale_y_continuous(labels = scales::percent)' - to display dollars on y axis, you can use</code>scale_y_continuous(labels = scales::dollar)’
 - to display euro on y axis, you can use `scale_y_continuous(labels = scales::dollar_format(suffix = “€”, prefix = ""))’
 <br>
 ### Add x axis unit
 Below listed two approach to label the math notation in x axis. <a href="https://trinkerrstuff.wordpress.com/2018/03/15/2246/">Math Notation for R Plot Titles: expression, bquote, &amp; Greek Letters</a> offers more ‘bquote’ application in R.</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="graphics-with-ggplot2.html#cb37-1"></a><span class="co">#method 1</span></span>
-<span id="cb37-2"><a href="graphics-with-ggplot2.html#cb37-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb37-3"><a href="graphics-with-ggplot2.html#cb37-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb37-4"><a href="graphics-with-ggplot2.html#cb37-4"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb37-5"><a href="graphics-with-ggplot2.html#cb37-5"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb37-6"><a href="graphics-with-ggplot2.html#cb37-6"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb37-7"><a href="graphics-with-ggplot2.html#cb37-7"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">bquote</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="graphics-with-ggplot2.html#cb39-1"></a><span class="co">#method 2</span></span>
-<span id="cb39-2"><a href="graphics-with-ggplot2.html#cb39-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb39-3"><a href="graphics-with-ggplot2.html#cb39-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb39-4"><a href="graphics-with-ggplot2.html#cb39-4"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb39-5"><a href="graphics-with-ggplot2.html#cb39-5"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb39-6"><a href="graphics-with-ggplot2.html#cb39-6"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb39-7"><a href="graphics-with-ggplot2.html#cb39-7"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-30-2.png" width="672" />
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="graphics-with-ggplot2.html#cb32-1"></a><span class="co">#method 1</span></span>
+<span id="cb32-2"><a href="graphics-with-ggplot2.html#cb32-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb32-3"><a href="graphics-with-ggplot2.html#cb32-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb32-4"><a href="graphics-with-ggplot2.html#cb32-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb32-5"><a href="graphics-with-ggplot2.html#cb32-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb32-6"><a href="graphics-with-ggplot2.html#cb32-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">bquote</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-90-1.png" width="672" /></p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="graphics-with-ggplot2.html#cb33-1"></a><span class="co">#method 2</span></span>
+<span id="cb33-2"><a href="graphics-with-ggplot2.html#cb33-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb33-3"><a href="graphics-with-ggplot2.html#cb33-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb33-4"><a href="graphics-with-ggplot2.html#cb33-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb33-5"><a href="graphics-with-ggplot2.html#cb33-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb33-6"><a href="graphics-with-ggplot2.html#cb33-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-90-2.png" width="672" />
 <br>
 ### Change x-axis breaks
-breaks function can be use to change the x or y axis breaks.</p>
-<p>+scale_x_continuous(breaks = c(2009,2010,2011,2012,2013,2014,2015,2016))</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="graphics-with-ggplot2.html#cb41-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb41-2"><a href="graphics-with-ggplot2.html#cb41-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb41-3"><a href="graphics-with-ggplot2.html#cb41-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb41-4"><a href="graphics-with-ggplot2.html#cb41-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb41-5"><a href="graphics-with-ggplot2.html#cb41-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb41-6"><a href="graphics-with-ggplot2.html#cb41-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">bquote</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
-<span id="cb41-7"><a href="graphics-with-ggplot2.html#cb41-7"></a><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">2009</span>,<span class="dv">2010</span>,<span class="dv">2011</span>,<span class="dv">2012</span>,<span class="dv">2013</span>,<span class="dv">2014</span>,<span class="dv">2015</span>,<span class="dv">2016</span>))</span></code></pre></div>
+You can use <code>breaks</code> function change the x or y axis breaks label.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="graphics-with-ggplot2.html#cb34-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb34-2"><a href="graphics-with-ggplot2.html#cb34-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb34-3"><a href="graphics-with-ggplot2.html#cb34-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
+<span id="cb34-4"><a href="graphics-with-ggplot2.html#cb34-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb34-5"><a href="graphics-with-ggplot2.html#cb34-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb34-6"><a href="graphics-with-ggplot2.html#cb34-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">bquote</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb34-7"><a href="graphics-with-ggplot2.html#cb34-7"></a><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">50</span>,<span class="dv">100</span>,<span class="dv">150</span>,<span class="dv">200</span>,<span class="dv">250</span>,<span class="dv">300</span>))</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
-</div>
-</div>
-<div id="change-x-axis-breaks" class="section level3">
-<h3><span class="header-section-number">5.3.3</span> Change x-axis breaks</h3>
-</div>
-<div id="change-x-axis-breaks-1" class="section level3">
-<h3><span class="header-section-number">5.3.4</span> Change x-axis breaks</h3>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-91-1.png" width="672" /></p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="graphics-with-ggplot2.html#cb36-1"></a><span class="co">##using seq if the breaks interval are equal</span></span>
+<span id="cb36-2"><a href="graphics-with-ggplot2.html#cb36-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb36-3"><a href="graphics-with-ggplot2.html#cb36-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb36-4"><a href="graphics-with-ggplot2.html#cb36-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb36-5"><a href="graphics-with-ggplot2.html#cb36-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb36-6"><a href="graphics-with-ggplot2.html#cb36-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">bquote</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb36-7"><a href="graphics-with-ggplot2.html#cb36-7"></a><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">50</span>,<span class="dv">300</span>,<span class="dv">50</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-91-2.png" width="672" />
+<br>
+### Specify axiss plot range
+You can use <code>limits</code> to modify the axis limits.Below is an example to plot the total floor area below 300 .</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="graphics-with-ggplot2.html#cb37-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb37-2"><a href="graphics-with-ggplot2.html#cb37-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb37-3"><a href="graphics-with-ggplot2.html#cb37-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb37-4"><a href="graphics-with-ggplot2.html#cb37-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb37-5"><a href="graphics-with-ggplot2.html#cb37-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">bquote</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb37-6"><a href="graphics-with-ggplot2.html#cb37-6"></a><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">50</span>,<span class="dv">300</span>,<span class="dv">50</span>),<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">300</span>))</span></code></pre></div>
+<pre><code>## Warning: Removed 1 rows containing missing values (geom_point).</code></pre>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-92-1.png" width="672" />
+<br>
+You can do the similiar for you y axis.</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="graphics-with-ggplot2.html#cb39-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb39-2"><a href="graphics-with-ggplot2.html#cb39-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb39-3"><a href="graphics-with-ggplot2.html#cb39-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb39-4"><a href="graphics-with-ggplot2.html#cb39-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb39-5"><a href="graphics-with-ggplot2.html#cb39-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">bquote</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb39-6"><a href="graphics-with-ggplot2.html#cb39-6"></a><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">50</span>,<span class="dv">300</span>,<span class="dv">50</span>),<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">300</span>))<span class="op">+</span></span>
+<span id="cb39-7"><a href="graphics-with-ggplot2.html#cb39-7"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1200</span>))</span></code></pre></div>
+<pre><code>## Scale for &#39;y&#39; is already present. Adding another scale for &#39;y&#39;, which will replace the existing scale.</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-93-1.png" width="672" /></p>
 <p><br>
 ### Add in title
 YOU can use <code>ggtitle()</code> to add a title in the plot. Below is the code to do so.</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="graphics-with-ggplot2.html#cb43-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb43-2"><a href="graphics-with-ggplot2.html#cb43-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb43-3"><a href="graphics-with-ggplot2.html#cb43-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb43-4"><a href="graphics-with-ggplot2.html#cb43-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb43-5"><a href="graphics-with-ggplot2.html#cb43-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb43-6"><a href="graphics-with-ggplot2.html#cb43-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
-<span id="cb43-7"><a href="graphics-with-ggplot2.html#cb43-7"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="graphics-with-ggplot2.html#cb42-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb42-2"><a href="graphics-with-ggplot2.html#cb42-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb42-3"><a href="graphics-with-ggplot2.html#cb42-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb42-4"><a href="graphics-with-ggplot2.html#cb42-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb42-5"><a href="graphics-with-ggplot2.html#cb42-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb42-6"><a href="graphics-with-ggplot2.html#cb42-6"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-94-1.png" width="672" /></p>
 <p><br>
 ### Change themes
 There are eight themes can be directlty used to give the plot a sonsistent customized look.<code>theme_grey()</code> is the default ggplot2 theme, you can use <code>theme_bw()</code> to remove it.</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="graphics-with-ggplot2.html#cb43-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb43-2"><a href="graphics-with-ggplot2.html#cb43-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb43-3"><a href="graphics-with-ggplot2.html#cb43-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb43-4"><a href="graphics-with-ggplot2.html#cb43-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb43-5"><a href="graphics-with-ggplot2.html#cb43-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb43-6"><a href="graphics-with-ggplot2.html#cb43-6"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
+<span id="cb43-7"><a href="graphics-with-ggplot2.html#cb43-7"></a><span class="st">  </span><span class="kw">theme_bw</span>()</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-95-1.png" width="672" /></p>
+<p>Blow are listed the other six theme, you can choose one you prefer for your academic writing.</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="graphics-with-ggplot2.html#cb44-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb44-2"><a href="graphics-with-ggplot2.html#cb44-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb44-3"><a href="graphics-with-ggplot2.html#cb44-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb44-4"><a href="graphics-with-ggplot2.html#cb44-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb44-5"><a href="graphics-with-ggplot2.html#cb44-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb44-6"><a href="graphics-with-ggplot2.html#cb44-6"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
+<span id="cb44-7"><a href="graphics-with-ggplot2.html#cb44-7"></a><span class="st">   </span><span class="kw">theme_linedraw</span>()</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-96-1.png" width="672" /></p>
 <div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="graphics-with-ggplot2.html#cb45-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb45-2"><a href="graphics-with-ggplot2.html#cb45-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb45-3"><a href="graphics-with-ggplot2.html#cb45-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb45-4"><a href="graphics-with-ggplot2.html#cb45-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb45-5"><a href="graphics-with-ggplot2.html#cb45-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb45-6"><a href="graphics-with-ggplot2.html#cb45-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
-<span id="cb45-7"><a href="graphics-with-ggplot2.html#cb45-7"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
-<span id="cb45-8"><a href="graphics-with-ggplot2.html#cb45-8"></a><span class="st">  </span><span class="kw">theme_bw</span>()</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
-<p>Blow are listed the other six theme, you can choose one you prefer for your academic writing.</p>
+<span id="cb45-3"><a href="graphics-with-ggplot2.html#cb45-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb45-4"><a href="graphics-with-ggplot2.html#cb45-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb45-5"><a href="graphics-with-ggplot2.html#cb45-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb45-6"><a href="graphics-with-ggplot2.html#cb45-6"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
+<span id="cb45-7"><a href="graphics-with-ggplot2.html#cb45-7"></a><span class="st">   </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-97-1.png" width="672" /></p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="graphics-with-ggplot2.html#cb46-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb46-2"><a href="graphics-with-ggplot2.html#cb46-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb46-3"><a href="graphics-with-ggplot2.html#cb46-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb46-4"><a href="graphics-with-ggplot2.html#cb46-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb46-5"><a href="graphics-with-ggplot2.html#cb46-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb46-6"><a href="graphics-with-ggplot2.html#cb46-6"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
+<span id="cb46-7"><a href="graphics-with-ggplot2.html#cb46-7"></a><span class="st">   </span><span class="kw">theme_dark</span>()</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-98-1.png" width="672" /></p>
 <div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="graphics-with-ggplot2.html#cb47-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb47-2"><a href="graphics-with-ggplot2.html#cb47-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb47-3"><a href="graphics-with-ggplot2.html#cb47-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb47-4"><a href="graphics-with-ggplot2.html#cb47-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb47-5"><a href="graphics-with-ggplot2.html#cb47-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb47-6"><a href="graphics-with-ggplot2.html#cb47-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
-<span id="cb47-7"><a href="graphics-with-ggplot2.html#cb47-7"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
-<span id="cb47-8"><a href="graphics-with-ggplot2.html#cb47-8"></a><span class="st">   </span><span class="kw">theme_linedraw</span>()</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<span id="cb47-3"><a href="graphics-with-ggplot2.html#cb47-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb47-4"><a href="graphics-with-ggplot2.html#cb47-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb47-5"><a href="graphics-with-ggplot2.html#cb47-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb47-6"><a href="graphics-with-ggplot2.html#cb47-6"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
+<span id="cb47-7"><a href="graphics-with-ggplot2.html#cb47-7"></a><span class="st">  </span><span class="kw">theme_minimal</span>()</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-99-1.png" width="672" /></p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="graphics-with-ggplot2.html#cb48-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb48-2"><a href="graphics-with-ggplot2.html#cb48-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb48-3"><a href="graphics-with-ggplot2.html#cb48-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb48-4"><a href="graphics-with-ggplot2.html#cb48-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb48-5"><a href="graphics-with-ggplot2.html#cb48-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb48-6"><a href="graphics-with-ggplot2.html#cb48-6"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
+<span id="cb48-7"><a href="graphics-with-ggplot2.html#cb48-7"></a><span class="st">  </span><span class="kw">theme_classic</span>()</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-100-1.png" width="672" /></p>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="graphics-with-ggplot2.html#cb49-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb49-2"><a href="graphics-with-ggplot2.html#cb49-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb49-3"><a href="graphics-with-ggplot2.html#cb49-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb49-4"><a href="graphics-with-ggplot2.html#cb49-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb49-5"><a href="graphics-with-ggplot2.html#cb49-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb49-6"><a href="graphics-with-ggplot2.html#cb49-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
-<span id="cb49-7"><a href="graphics-with-ggplot2.html#cb49-7"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
-<span id="cb49-8"><a href="graphics-with-ggplot2.html#cb49-8"></a><span class="st">   </span><span class="kw">theme_light</span>()</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="graphics-with-ggplot2.html#cb51-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb51-2"><a href="graphics-with-ggplot2.html#cb51-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb51-3"><a href="graphics-with-ggplot2.html#cb51-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb51-4"><a href="graphics-with-ggplot2.html#cb51-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb51-5"><a href="graphics-with-ggplot2.html#cb51-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb51-6"><a href="graphics-with-ggplot2.html#cb51-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
-<span id="cb51-7"><a href="graphics-with-ggplot2.html#cb51-7"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
-<span id="cb51-8"><a href="graphics-with-ggplot2.html#cb51-8"></a><span class="st">   </span><span class="kw">theme_dark</span>()</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="graphics-with-ggplot2.html#cb53-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb53-2"><a href="graphics-with-ggplot2.html#cb53-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb53-3"><a href="graphics-with-ggplot2.html#cb53-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb53-4"><a href="graphics-with-ggplot2.html#cb53-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb53-5"><a href="graphics-with-ggplot2.html#cb53-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb53-6"><a href="graphics-with-ggplot2.html#cb53-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
-<span id="cb53-7"><a href="graphics-with-ggplot2.html#cb53-7"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
-<span id="cb53-8"><a href="graphics-with-ggplot2.html#cb53-8"></a><span class="st">  </span><span class="kw">theme_minimal</span>()</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="graphics-with-ggplot2.html#cb55-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb55-2"><a href="graphics-with-ggplot2.html#cb55-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb55-3"><a href="graphics-with-ggplot2.html#cb55-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb55-4"><a href="graphics-with-ggplot2.html#cb55-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb55-5"><a href="graphics-with-ggplot2.html#cb55-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb55-6"><a href="graphics-with-ggplot2.html#cb55-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
-<span id="cb55-7"><a href="graphics-with-ggplot2.html#cb55-7"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
-<span id="cb55-8"><a href="graphics-with-ggplot2.html#cb55-8"></a><span class="st">  </span><span class="kw">theme_classic</span>()</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="graphics-with-ggplot2.html#cb57-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb57-2"><a href="graphics-with-ggplot2.html#cb57-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb57-3"><a href="graphics-with-ggplot2.html#cb57-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb57-4"><a href="graphics-with-ggplot2.html#cb57-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb57-5"><a href="graphics-with-ggplot2.html#cb57-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb57-6"><a href="graphics-with-ggplot2.html#cb57-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
-<span id="cb57-7"><a href="graphics-with-ggplot2.html#cb57-7"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
-<span id="cb57-8"><a href="graphics-with-ggplot2.html#cb57-8"></a><span class="st">  </span><span class="kw">theme_void</span>()</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-39-1.png" width="672" />
+<span id="cb49-3"><a href="graphics-with-ggplot2.html#cb49-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb49-4"><a href="graphics-with-ggplot2.html#cb49-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb49-5"><a href="graphics-with-ggplot2.html#cb49-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb49-6"><a href="graphics-with-ggplot2.html#cb49-6"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
+<span id="cb49-7"><a href="graphics-with-ggplot2.html#cb49-7"></a><span class="st">  </span><span class="kw">theme_void</span>()</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-101-1.png" width="672" />
 <br>
 The R package <strong>ggthemes</strong> provides another gallery of custom ggplot themes.You can see detials in <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/">package:ggthemes • All Your Figure Are Belong To Us</a>.
 <br></p>
 </div>
+</div>
 <div id="change-the-font-size" class="section level3">
-<h3><span class="header-section-number">5.3.5</span> Change the font size</h3>
-<p>You can also manual customize the ggplot by modify the components in <a href="https://ggplot2.tidyverse.org/reference/theme.html">theme()</a>. Below I give a series if example on how to change the font size in the plot, let us do step-by-step.
+<h3><span class="header-section-number">5.3.3</span> Change the font size</h3>
+<p>You can manual customize the ggplot by modify the components in <a href="https://ggplot2.tidyverse.org/reference/theme.html">theme()</a>. Below I give a series if example on how to change the font size in the plot, let us do step-by-step.
 <br>
-(1)</p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="graphics-with-ggplot2.html#cb59-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb59-2"><a href="graphics-with-ggplot2.html#cb59-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
-<span id="cb59-3"><a href="graphics-with-ggplot2.html#cb59-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb59-4"><a href="graphics-with-ggplot2.html#cb59-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
-<span id="cb59-5"><a href="graphics-with-ggplot2.html#cb59-5"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
-<span id="cb59-6"><a href="graphics-with-ggplot2.html#cb59-6"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
-<span id="cb59-7"><a href="graphics-with-ggplot2.html#cb59-7"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transaction price against total floor area in local authorities, 2009&quot;</span>)<span class="op">+</span></span>
-<span id="cb59-8"><a href="graphics-with-ggplot2.html#cb59-8"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
-<span id="cb59-9"><a href="graphics-with-ggplot2.html#cb59-9"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>), <span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">legend.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>))</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
-<div id="section-1" class="section level4">
-<h4><span class="header-section-number">5.3.5.1</span> </h4>
+(1) Change the font size of text in x and y axis and color in red</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="graphics-with-ggplot2.html#cb50-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb50-2"><a href="graphics-with-ggplot2.html#cb50-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb50-3"><a href="graphics-with-ggplot2.html#cb50-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb50-4"><a href="graphics-with-ggplot2.html#cb50-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb50-5"><a href="graphics-with-ggplot2.html#cb50-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb50-6"><a href="graphics-with-ggplot2.html#cb50-6"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
+<span id="cb50-7"><a href="graphics-with-ggplot2.html#cb50-7"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>,<span class="dt">color=</span><span class="st">&quot;red&quot;</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-102-1.png" width="672" />
+<br></p>
+<ol start="2" style="list-style-type: decimal">
+<li>change the font size of x and y label in the plot and color in red</li>
+</ol>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="graphics-with-ggplot2.html#cb51-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb51-2"><a href="graphics-with-ggplot2.html#cb51-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb51-3"><a href="graphics-with-ggplot2.html#cb51-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb51-4"><a href="graphics-with-ggplot2.html#cb51-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb51-5"><a href="graphics-with-ggplot2.html#cb51-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb51-6"><a href="graphics-with-ggplot2.html#cb51-6"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
+<span id="cb51-7"><a href="graphics-with-ggplot2.html#cb51-7"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>,<span class="dt">color=</span><span class="st">&quot;red&quot;</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-103-1.png" width="672" />
+<br>
+(3) change the font size of facet labels in the plot and color in red</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="graphics-with-ggplot2.html#cb52-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb52-2"><a href="graphics-with-ggplot2.html#cb52-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb52-3"><a href="graphics-with-ggplot2.html#cb52-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb52-4"><a href="graphics-with-ggplot2.html#cb52-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb52-5"><a href="graphics-with-ggplot2.html#cb52-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb52-6"><a href="graphics-with-ggplot2.html#cb52-6"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
+<span id="cb52-7"><a href="graphics-with-ggplot2.html#cb52-7"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>,<span class="dt">color=</span><span class="st">&quot;red&quot;</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-104-1.png" width="672" />
+<br>
+(4) change the font size of legend item labels in the plot and color in red</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="graphics-with-ggplot2.html#cb53-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb53-2"><a href="graphics-with-ggplot2.html#cb53-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm),<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb53-3"><a href="graphics-with-ggplot2.html#cb53-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb53-4"><a href="graphics-with-ggplot2.html#cb53-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb53-5"><a href="graphics-with-ggplot2.html#cb53-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb53-6"><a href="graphics-with-ggplot2.html#cb53-6"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
+<span id="cb53-7"><a href="graphics-with-ggplot2.html#cb53-7"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>,<span class="dt">color=</span><span class="st">&quot;red&quot;</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-105-1.png" width="672" /></p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="graphics-with-ggplot2.html#cb54-1"></a><span class="co">##</span></span></code></pre></div>
+<p><br>
+(5)change the font size of title of legend in the plot and color in red</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="graphics-with-ggplot2.html#cb55-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb55-2"><a href="graphics-with-ggplot2.html#cb55-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm),<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb55-3"><a href="graphics-with-ggplot2.html#cb55-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb55-4"><a href="graphics-with-ggplot2.html#cb55-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb55-5"><a href="graphics-with-ggplot2.html#cb55-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb55-6"><a href="graphics-with-ggplot2.html#cb55-6"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
+<span id="cb55-7"><a href="graphics-with-ggplot2.html#cb55-7"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">legend.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>,<span class="dt">color=</span><span class="st">&quot;red&quot;</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-106-1.png" width="672" /></p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="graphics-with-ggplot2.html#cb56-1"></a><span class="co">##</span></span></code></pre></div>
+<p><br>
+You may wondering how to change the lengend text in above plot. Below is the answer:</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="graphics-with-ggplot2.html#cb57-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
+<span id="cb57-2"><a href="graphics-with-ggplot2.html#cb57-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm),<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb57-3"><a href="graphics-with-ggplot2.html#cb57-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb57-4"><a href="graphics-with-ggplot2.html#cb57-4"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb57-5"><a href="graphics-with-ggplot2.html#cb57-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">3</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb57-6"><a href="graphics-with-ggplot2.html#cb57-6"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
+<span id="cb57-7"><a href="graphics-with-ggplot2.html#cb57-7"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">legend.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>,<span class="dt">color=</span><span class="st">&quot;red&quot;</span>))<span class="op">+</span></span>
+<span id="cb57-8"><a href="graphics-with-ggplot2.html#cb57-8"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">color =</span> <span class="st">&quot;Local authority&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-107-1.png" width="672" />
+<br></p>
+</div>
+<div id="add-in-the-pearson-correlation-coefficient-result-in-the-plot" class="section level3">
+<h3><span class="header-section-number">5.3.4</span> Add in the Pearson correlation coefficient result in the plot</h3>
+<p>Since the aims of plot this satter plot is to explore the relationship between transaction price and property’s total floor area. Pearson correlation coefficient is more suitable to consider in the plot.</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="graphics-with-ggplot2.html#cb58-1"></a><span class="co"># calutate the Pearson correlation coefficient for each local authority </span></span>
+<span id="cb58-2"><a href="graphics-with-ggplot2.html#cb58-2"></a><span class="kw">cor.test</span>(housedata1[housedata1<span class="op">$</span>laua<span class="op">==</span><span class="st">&quot;E07000208&quot;</span>,]<span class="op">$</span>price,housedata1[housedata1<span class="op">$</span>laua<span class="op">==</span><span class="st">&quot;E07000208&quot;</span>,]<span class="op">$</span>tfarea,<span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)<span class="op">$</span>p.value</span></code></pre></div>
+<pre><code>## [1] 3.781275e-234</code></pre>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="graphics-with-ggplot2.html#cb60-1"></a><span class="kw">cor.test</span>(housedata1[housedata1<span class="op">$</span>laua<span class="op">==</span><span class="st">&quot;E07000208&quot;</span>,]<span class="op">$</span>price,housedata1[housedata1<span class="op">$</span>laua<span class="op">==</span><span class="st">&quot;E07000208&quot;</span>,]<span class="op">$</span>tfarea,<span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)</span></code></pre></div>
+<pre><code>## 
+##  Pearson&#39;s product-moment correlation
+## 
+## data:  housedata1[housedata1$laua == &quot;E07000208&quot;, ]$price and housedata1[housedata1$laua == &quot;E07000208&quot;, ]$tfarea
+## t = 47.805, df = 781, p-value &lt; 2.2e-16
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  0.8443096 0.8801316
+## sample estimates:
+##       cor 
+## 0.8633039</code></pre>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="graphics-with-ggplot2.html#cb62-1"></a><span class="co">#0.86</span></span>
+<span id="cb62-2"><a href="graphics-with-ggplot2.html#cb62-2"></a><span class="kw">cor.test</span>(housedata1[housedata1<span class="op">$</span>laua<span class="op">==</span><span class="st">&quot;E09000001&quot;</span>,]<span class="op">$</span>price,housedata1[housedata1<span class="op">$</span>laua<span class="op">==</span><span class="st">&quot;E09000001&quot;</span>,]<span class="op">$</span>tfarea,<span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)<span class="op">$</span>p.value</span></code></pre></div>
+<pre><code>## [1] 5.008952e-41</code></pre>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="graphics-with-ggplot2.html#cb64-1"></a><span class="kw">cor.test</span>(housedata1[housedata1<span class="op">$</span>laua<span class="op">==</span><span class="st">&quot;E09000001&quot;</span>,]<span class="op">$</span>price,housedata1[housedata1<span class="op">$</span>laua<span class="op">==</span><span class="st">&quot;E09000001&quot;</span>,]<span class="op">$</span>tfarea,<span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)</span></code></pre></div>
+<pre><code>## 
+##  Pearson&#39;s product-moment correlation
+## 
+## data:  housedata1[housedata1$laua == &quot;E09000001&quot;, ]$price and housedata1[housedata1$laua == &quot;E09000001&quot;, ]$tfarea
+## t = 19.244, df = 139, p-value &lt; 2.2e-16
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  0.8001865 0.8922424
+## sample estimates:
+##       cor 
+## 0.8527027</code></pre>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="graphics-with-ggplot2.html#cb66-1"></a><span class="co">#0.85</span></span>
+<span id="cb66-2"><a href="graphics-with-ggplot2.html#cb66-2"></a></span>
+<span id="cb66-3"><a href="graphics-with-ggplot2.html#cb66-3"></a><span class="co"># add coefficient and p value in the graph</span></span>
+<span id="cb66-4"><a href="graphics-with-ggplot2.html#cb66-4"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>))<span class="op">+</span></span>
+<span id="cb66-5"><a href="graphics-with-ggplot2.html#cb66-5"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
+<span id="cb66-6"><a href="graphics-with-ggplot2.html#cb66-6"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
+<span id="cb66-7"><a href="graphics-with-ggplot2.html#cb66-7"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">name =</span> <span class="st">&quot;Transaction Price (in £1000s)&quot;</span>,<span class="dt">labels =</span> scales<span class="op">::</span>comma)<span class="op">+</span></span>
+<span id="cb66-8"><a href="graphics-with-ggplot2.html#cb66-8"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
+<span id="cb66-9"><a href="graphics-with-ggplot2.html#cb66-9"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
+<span id="cb66-10"><a href="graphics-with-ggplot2.html#cb66-10"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-108-1.png" width="672" /></p>
 </div>
 </div>
-<div id="section-2" class="section level3">
-<h3><span class="header-section-number">5.3.6</span> </h3>
-<div id="section-3" class="section level4">
-<h4><span class="header-section-number">5.3.6.1</span> </h4>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="graphics-with-ggplot2.html#cb61-1"></a><span class="co">##</span></span></code></pre></div>
+<div id="saving-graphs" class="section level2">
+<h2><span class="header-section-number">5.4</span> Saving graphs</h2>
+<p>TIFF files exported directly from RStudio will only achieve a resolution of 72dpi.dpi is a measure of resolution – the higher the dpi, the sharper the image. ggsave is used to save a 500 dpi graph from the screen to a file.</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="graphics-with-ggplot2.html#cb67-1"></a><span class="kw">getwd</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;D:/R/CASA_seminar2&quot;</code></pre>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="graphics-with-ggplot2.html#cb69-1"></a><span class="kw">ggsave</span>(<span class="st">&quot;Figure_A.tiff&quot;</span>,<span class="dt">units=</span><span class="st">&quot;in&quot;</span>, <span class="dt">width=</span><span class="dv">14</span>, <span class="dt">height=</span><span class="dv">6</span>, <span class="dt">dpi=</span><span class="dv">500</span>, <span class="dt">compression =</span> <span class="st">&#39;lzw&#39;</span>)  </span></code></pre></div>
 </div>
-</div>
-<div id="section-4" class="section level3">
-<h3><span class="header-section-number">5.3.7</span> </h3>
-</div>
-<div id="change-the-axis-titles" class="section level3">
-<h3><span class="header-section-number">5.3.8</span> Change the axis titles</h3>
-<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="graphics-with-ggplot2.html#cb62-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
-<span id="cb62-2"><a href="graphics-with-ggplot2.html#cb62-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm))<span class="op">+</span></span>
-<span id="cb62-3"><a href="graphics-with-ggplot2.html#cb62-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>)<span class="op">+</span></span>
-<span id="cb62-4"><a href="graphics-with-ggplot2.html#cb62-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)</span></code></pre></div>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-42-1.png" width="672" /></p>
-<div id="section-5" class="section level4">
-<h4><span class="header-section-number">5.3.8.1</span> </h4>
-<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="graphics-with-ggplot2.html#cb64-1"></a><span class="kw">head</span>(housedata2)</span></code></pre></div>
-<pre><code>##         gor yearchi priceper     region
-## 1 E12000001    2009 1425.943 North East
-## 2 E12000001    2012 1392.045 North East
-## 3 E12000001    2015 1480.584 North East
-## 4 E12000001    2016 1486.486 North East
-## 5 E12000001    2011 1390.934 North East
-## 6 E12000001    2014 1460.396 North East</code></pre>
-<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="graphics-with-ggplot2.html#cb66-1"></a><span class="kw">ggplot</span>(<span class="dt">data=</span>housedata2, <span class="kw">aes</span>(<span class="dt">x=</span> yearchi, <span class="dt">y=</span>priceper,<span class="dt">group=</span>region,<span class="dt">color=</span>region)) <span class="op">+</span><span class="kw">geom_point</span>(<span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span></span>
-<span id="cb66-2"><a href="graphics-with-ggplot2.html#cb66-2"></a><span class="st">  </span><span class="kw">geom_line</span>( <span class="dt">size =</span> <span class="dv">1</span>)<span class="op">+</span></span>
-<span id="cb66-3"><a href="graphics-with-ggplot2.html#cb66-3"></a><span class="st">  </span><span class="kw">scale_colour_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;#F8766D&quot;</span>, <span class="st">&quot;#D39200&quot;</span>,<span class="st">&quot;#000000&quot;</span>,<span class="st">&quot;#93AA00&quot;</span>, <span class="st">&quot;#00BA38&quot;</span> ,<span class="st">&quot;#00C19F&quot;</span> ,<span class="st">&quot;#00B9E3&quot;</span>, <span class="st">&quot;#619CFF&quot;</span> ,<span class="st">&quot;#DB72FB&quot;</span>, <span class="st">&quot;#FF61C3&quot;</span>))<span class="op">+</span></span>
-<span id="cb66-4"><a href="graphics-with-ggplot2.html#cb66-4"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
-<span id="cb66-5"><a href="graphics-with-ggplot2.html#cb66-5"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>), <span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">legend.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>))<span class="op">+</span></span>
-<span id="cb66-6"><a href="graphics-with-ggplot2.html#cb66-6"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;House price per square metre&quot;</span>)<span class="op">+</span></span>
-<span id="cb66-7"><a href="graphics-with-ggplot2.html#cb66-7"></a><span class="st">  </span><span class="kw">guides</span>(<span class="dt">color=</span><span class="kw">guide_legend</span>(<span class="st">&quot;Location&quot;</span>)) <span class="op">+</span></span>
-<span id="cb66-8"><a href="graphics-with-ggplot2.html#cb66-8"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">labels =</span> scales<span class="op">::</span>comma,)<span class="op">+</span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">2009</span>,<span class="dv">2010</span>,<span class="dv">2011</span>,<span class="dv">2012</span>,<span class="dv">2013</span>,<span class="dv">2014</span>,<span class="dv">2015</span>,<span class="dv">2016</span>))</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-43-1.png" width="672" /></p>
-</div>
-<div id="section-6" class="section level4">
-<h4><span class="header-section-number">5.3.8.2</span> </h4>
-</div>
-<div id="section-7" class="section level4">
-<h4><span class="header-section-number">5.3.8.3</span> </h4>
-</div>
-</div>
-<div id="extensions-to-ggplot2" class="section level3">
-<h3><span class="header-section-number">5.3.9</span> Extensions to ggplot2</h3>
-<p>ggthemes – more diagram themes, allows you to make graphics appear as if produced by Stata,
+<div id="extensions" class="section level2">
+<h2><span class="header-section-number">5.5</span> Extensions</h2>
+<p><a href="https://mode.com/blog/r-ggplot-extension-packages/">12 Extensions to ggplot2 for More Powerful R Visualizations</a>
+ggthemes – more diagram themes, allows you to make graphics appear as if produced by Stata,
 Excel, The Economist, etc.
 ggformula – an interface similar to lattice
 ggpmisc – support for time series and polynomial ts
@@ -561,28 +607,6 @@ ggExtra – add marginal plots etc
 GGally – special purpose plots, coecient plots, model diagnostics, networks, correlation matrices
 plotly has the function ggplotly to translate “ggplot” results into JavaScript diagrams suitable for
 websites.</p>
-</div>
-<div id="section-8" class="section level3">
-<h3><span class="header-section-number">5.3.10</span> </h3>
-<div id="section-9" class="section level4">
-<h4><span class="header-section-number">5.3.10.1</span> </h4>
-<p>Here is a review of existing methods.</p>
-</div>
-</div>
-</div>
-<div id="sub-and-superscript" class="section level2">
-<h2><span class="header-section-number">5.4</span> Sub and superscript</h2>
-</div>
-<div id="saving-graphs" class="section level2">
-<h2><span class="header-section-number">5.5</span> Saving graphs</h2>
-<p>TIFF files exported directly from RStudio will only achieve a resolution of 72dpi.dpi is a measure of resolution – the higher the dpi, the sharper the image.</p>
-<p>In RStudio, you can click on the “Export” button and export your plots</p>
-<p>Using ggsave is used to save a ggplot2 graph from the screen to a file</p>
-<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="graphics-with-ggplot2.html#cb67-1"></a><span class="kw">ggsave</span>(<span class="st">&quot;Figure_B.tiff&quot;</span>,<span class="dt">units=</span><span class="st">&quot;in&quot;</span>, <span class="dt">width=</span><span class="dv">14</span>, <span class="dt">height=</span><span class="dv">6</span>, <span class="dt">dpi=</span><span class="dv">500</span>, <span class="dt">compression =</span> <span class="st">&#39;lzw&#39;</span>)  </span></code></pre></div>
-</div>
-<div id="sum-up" class="section level2">
-<h2><span class="header-section-number">5.6</span> Sum up</h2>
-<p><a href="https://mode.com/blog/r-ggplot-extension-packages/">12 Extensions to ggplot2 for More Powerful R Visualizations</a></p>
 
 </div>
 </div>
