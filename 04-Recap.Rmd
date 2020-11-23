@@ -1,14 +1,18 @@
 # Recap 
-  
-## Basic requirment of a graph 
 <br>
-Graphs request to be **clear, precise and efficient**,below listed some requirement of graphs
+Graphs request to be **clear, precise and efficient**, below listed some requirement of graphs:
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
 * Have a title or figure caption 
 * Label axes
 * Axis labels with units
 * Have a legend
-* legible font size
-
+* Legible font size
+* good resolution
+</div>
+  
 **Tip**: When you are ready to begin creating your figures,it worthwhile to understand the manuscript requirement first.so let use have a look at the CASA0005 assessment mark scheme.
 
    ![](GIS-MarkScheme-2020.pdf){width=100% height=400}
@@ -23,60 +27,18 @@ Meanwhile,different journal or publisher have different requirements in Figures.
  
 -  [Wiley manuscript preparation guidelines](https://authorservices.wiley.com/asset/photos/electronic_artwork_guidelines.pdf)
  
- 
- 
- 
- # Readability
- 
 
- * Clear, concise, easy to read (https://www3.nd.edu/~pkamat/pdf/graphs.pdf)
-
- ##add a picture at Artwork guidelines
- 
+Graphic in academic research is general expected to be clear, concise and easy to read. Now let's have a look at some examples in GIS course assignment last year.
 
 
+![Example 1](e6.png){out.wide="100%"}
+![[Example 2](e2.png){out.wide="100%"}
+![Example 3](e3.png){out.wide="100%"}
 
-Graphs request to be **clear, precise and efficient**, below listed some guidance for graphs in academic writing.
-### Basic requirment of graphs 
-* Have a title or figure caption 
-* Label axes
-* Axis labels with units
-* Have a legend
-* legible font size
-
-### Basic requirment of graphs in academic wriring
+![Example 4](e4.png){out.wide="100%"}
 
 
-Avoid colors that are difficult to distinguish
 
 
-Tip: When you are ready to begin creating your figures,it worth 
-
-A* Resolutionvoid colors that are difficult to distinguish
 
 
-<style>
-div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "blue">
-
- - Advanced your knowledge about ggplot2 in R  
- - Know ten advanced customization  in ggplot
- - Create a high resolution graph for your research
- - Trouble-soluting by yourself
- 
-[2] (https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128)  
-[1] ( http://www.sigmaplot.co.uk/splot/products/sigmaplot/productuses/prod-uses25.php)  
-[3] (https://datacarpentry.org/dc_zurich/R-ecology/05-visualisation-ggplot2.html )  
-[4] ( https://www.aje.com/dist/docs/Guide-Creating-Effective-Scientific-Figures-for-Publication.pdf)
-
-
- *
- *First, check out what your target journal 
- *
- *
- *
-
-</div>
-
-#### bad example in GIS course assignemtn

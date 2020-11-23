@@ -1,5 +1,6 @@
 # Recommend resources
 <br>
+Data visualisation is the visual representation of patterns in data. An efficient data visulaistion makes data more understandable.
 
 ## Resouces about ggplot2 packge
  -   [Data Visualization with ggplot2 Cheat Sheet - RStudio](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
@@ -21,8 +22,9 @@
 <br>
  -  [R Graphics Cookbook, 2nd edition](https://r-graphics.org/index.html)
 <br>
-
+ -  [Data visualization beginner's guide: a definition, examples, and learning resources](https://www.tableau.com/learn/articles/data-visualization)
+<br>
 
 ## How to find more useful resources 
-<br>
- -   [GOOGLE](https://www.google.com/)
+  
+ -  [GOOGLE](https://www.google.com/)
