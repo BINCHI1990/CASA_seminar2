@@ -8,10 +8,10 @@ There are two ways to produce plots in ggplot2, one is `qplot()` and the other i
 >ggplot2 is based on the grammar of graphics, the idea that you can build every graph from the same few components: a **data** set, a set of **geoms**—visual marks that represent data points, and a coordinate system.
   
 ## Building a simple ggplot plot
-Now let us start with creating a scatter plot using ggplot().The scatter plot is created to explore the relationship between transaction price and total floor area in two different local authorities. 
+Now let us start by creating a scatter plot using ggplot().The scatter plot is created to explore the relationship between transaction price and total floor area in two different local authorities. 
 <br> 
-### Make sure your object is data frames
-Since ggplot only works with **data** frames, we use `is.data.frame()`to check the whether the data is a data frame.If it is not, you need to tranfer it to a data frame
+### Make sure your datasets are data frames
+Since ggplot only works with **data** frames, we use `is.data.frame()`to check the whether the data is a data frame. If it is not, you need to convert it to a data frame
 ```{r}
 #test the data set is a data frame
 #is.data.frame(housedata1)
@@ -37,7 +37,7 @@ ggplot(housedata1,aes(x=tfarea,y=price))+
   geom_point(aes(color=ldnm))
 ```
 ### Add a linear regression line
-To add a linear regression line to a scatter plot, we can do this by adding `stat_smooth()`,`method = lm` refers to  fit the data linear model function
+To add a linear regression line to a scatter plot, we can do this by adding `stat_smooth()`,`method = lm`  where lm means linear model i.e. use linear regression
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
@@ -56,8 +56,8 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
 
 ## Customizing the graph
   
-### Change the point color
-The color of the points can be control with the `color` aesthetic.Below is the code to color all the points in blue.
+### Change the point colour
+The colour of the points can be control with the `color` aesthetic.Below is the code to colour all the points in blue.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9")+
@@ -75,7 +75,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
 ```
 <br>
 ### Change the point shape
-The size of the points can be controlled with the `shape` aesthetic. The default shape is solid circles and you can change with [Point Shape Options in ggplot](https://blog.albertkuo.me/post/point-shape-options-in-ggplot/). The following code show you how to plot the point as solid squares.
+The size of the points can be controlled with the `shape` aesthetic. The default shape is solid circles and you can change with [Point Shape Options in ggplot](https://blog.albertkuo.me/post/point-shape-options-in-ggplot/). The following code shows you how to plot the points as solid squares.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2, shape=15)+
@@ -85,7 +85,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
 <br>
 ### Modify fitted regression lines
 
-The default color of the fit line is blue. This can be change by setting `colour`,The following code set a red fit line.
+The default color of the fit line is blue. This can be change by setting `colour`,The following code sets a red fit line.
 ```{r}
 #method 1
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
@@ -98,7 +98,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_smooth(method="lm",colour = "#FF0000")+
   facet_wrap(~ ldnm)
 ```
-The grey area near the fit line is confidence region.you can disabled it with `se = FALSE`
+The grey area near the fit line is the confidence region.you can disabled it with `se = FALSE`
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -107,7 +107,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
 ```
 <br>
 ### Change the axis titles
-labs function can be used to change axis labels.Here are two ways to change the axis title.
+The labs function can be used to change axis labels.Here are two ways to change the axis title.
 ```{r}
 #Method 1
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
@@ -126,7 +126,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
 ### Add axis units
   
 #### Formatting y axis and labels
-Below is the code for add in the y axis unit in ggplot().
+Below is the code for adding in the y axis units in ggplot().
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -135,7 +135,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   ylab("Transaction price (£)")
 ```
 <br>
-If you want to change scale the y axis to thousands, you can use `scale_y_continuous`.  
+If you want to change the units of the y axis to thousands of pounds, you can use `scale_y_continuous`.  
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -144,7 +144,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   xlab("Total floor area")
 ```
 <br>
-You can also format the y labels more readable, with some common formats in scales package.Below is the code for formatting y labels in comma.
+You can also format the y labels more readably, with some common formats from the scales package.Below is the code for formatting y labels in comma.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -153,12 +153,12 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   xlab("Total floor area")
 ```
 <br>   
-- to transfer y axis to a percentage scale ,you can use `scale_y_continuous(labels = scales::percent)'
-- to display dollars on y axis, you can use `scale_y_continuous(labels = scales::dollar)'
-- to display euro on y axis, you can use `scale_y_continuous(labels = scales::dollar_format(suffix = "€", prefix = ""))'
+- to convert the y axis to a percentage scale ,you can use `scale_y_continuous(labels = scales::percent)'
+- to display dollars on the y axis, you can use `scale_y_continuous(labels = scales::dollar)'
+- to display euros on the y axis, you can use `scale_y_continuous(labels = scales::dollar_format(suffix = "€", prefix = ""))'
 <br>
 ### Add x axis unit
-Below listed two approach to label the math notation in x axis. [Math Notation for R Plot Titles: expression, bquote, & Greek Letters](https://trinkerrstuff.wordpress.com/2018/03/15/2246/) offers more 'bquote' application in R. 
+Below are listed two approaches to labelling the x axis using math notation. [Math Notation for R Plot Titles: expression, bquote, & Greek Letters](https://trinkerrstuff.wordpress.com/2018/03/15/2246/) offers more 'bquote' applications in R. 
 ```{r}
 #method 1
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -177,7 +177,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 ```
 <br>
 ### Change x-axis breaks 
-You can use `breaks` function to change the x or y axis breaks labels.
+You can use the `breaks` function to change the x or y axis breaks.
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -198,8 +198,8 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 
 ```
 <br>
-### Specify axiss plot range 
-You can use `limits` to modify the axis limits.Below is an example to plot the total floor area below 300 .
+### Specify axis plot range 
+You can use `limits` to modify the axis limits.Below is an example to limit the x axis. It plots the total floor area below 300 .
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -239,7 +239,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 
 <br>
 ### Change themes 
-There are eight themes that can be directlty used to give the plot a customized look.`theme_grey()` is the default ggplot2 theme, you can use `theme_bw()` to remove it.
+There are eight themes that can be directly used to give the plot a customized look.`theme_grey()` is the default ggplot2 theme, you can use `theme_bw()` to remove it.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -249,7 +249,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   theme_bw()
 ```
 
-Blow are listed the rest of six other themes, from which you can choose your faviate for your academic writing.
+Below are listed the rest of six other themes, from which you can choose your favourite for your academic writing.
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -310,9 +310,9 @@ The R package **ggthemes** provides another gallery of custom ggplot themes.You 
 
 ### Change the font size
 
-You can manual customize the ggplot by modify the components in [theme()](https://ggplot2.tidyverse.org/reference/theme.html). Below I give a series of examples on how to change the font size in the plot, let us do step-by-step.
+You can manually customize the ggplot by modifying the components in [theme()](https://ggplot2.tidyverse.org/reference/theme.html). Below I give a series of examples on how to change the font size in the plot. Let us do it step-by-step.
 <br>
-(1) Change the font size of text in x and y axis and color in red
+(1) Change the font size of text in x and y axis and colour it red
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -324,7 +324,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 ```
 <br>
 
-(2) change the font size of x and y label in the plot and color in red
+(2) change the font size of x and y labels in the plot and colour them red
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -336,7 +336,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   theme(axis.title = element_text(size=15),axis.text = element_text(size=13,color="red"))
 ```
 <br>
-(3) change the font size of facet labels in the plot and color in red
+(3) change the font size of facet labels in the plot and colour them red
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -348,7 +348,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   theme(axis.title = element_text(size=15),axis.text = element_text(size=13),strip.text = element_text(size=15,color="red"))
 ```
 <br>
-(4) change the font size of legend item labels in the plot and color in red
+(4) change the font size of legend item labels in the plot and colour them red
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -362,7 +362,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 ##
 ```
   
-(5)change the font size of title of legend in the plot and color in red
+(5)change the font size of title of the legend in the plot and colour it red
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -375,7 +375,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 ##
 ```
   
-You may wonder about how to change the lengend text in above plot. Below is the answer:
+You may wonder about how to change the legend text in the above plot. Below is the answer:
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -391,7 +391,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 <br>
 
 ### Add in the Pearson correlation coefficient result in the plot
-Since the aims of this satter plot is to explore the relationship between transaction price and property’s total floor area. Pearson correlation coefficient is more suitable to consider in the plot.Here we use stat_cor() from the package ggpubr.
+Since the aim of this scatter plot is to explore the relationship between transaction price and property’s total floor area. The Pearson correlation coefficient is a suitable measure to show in the plot.Here we use stat_cor() from the package ggpubr.
 ```{r}
 # add Pearson correlation coefficient and p value in the graph
 
@@ -421,13 +421,13 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000))+
   theme(axis.title = element_text(size=15),axis.text = element_text(size=13),strip.text = element_text(size=15))+
  stat_cor(method="pearson")
 ```
-Tip: Once you type `trace(ggpubr:::.cor_test, edit=TRUE)` in R studio, you will get a edit window as shown in above. You only need change the red square part from left to right.
+Tip: Once you type `trace(ggpubr:::.cor_test, edit=TRUE)` in R studio, you will get an edit window as shown above. You need only change the red square part from left to right.
 
 ![](rho.png){out.wide="100%"}
 
 
 <br>
-You also can change the label text location as below: 
+You also can change the label text location as shown below: 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price/1000))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -441,7 +441,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000))+
 
 
 ## Saving graphs
-TIFF files exported directly from RStudio will only achieve a resolution of 72dpi.dpi is a measure of resolution – the higher the dpi, the sharper the image. `ggsave` is used to save a 500 dpi graph from the screen to a file.
+TIFF files exported directly from RStudio will only achieve a resolution of 72dpi.dpi as a measure of resolution – the higher the dpi, the sharper the image. `ggsave` is used to save a 500 dpi graph from the screen to a file.
 
 ```{r}
 #get you working directory

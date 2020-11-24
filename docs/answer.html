@@ -137,10 +137,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li><a href="index.html#section"></a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="recommend-resources.html"><a href="recommend-resources.html"><i class="fa fa-check"></i><b>2</b> Recommend resources</a><ul>
-<li class="chapter" data-level="2.1" data-path="recommend-resources.html"><a href="recommend-resources.html#resouces-about-ggplot2-package"><i class="fa fa-check"></i><b>2.1</b> Resouces about ggplot2 package</a></li>
-<li class="chapter" data-level="2.2" data-path="recommend-resources.html"><a href="recommend-resources.html#resouces-about-graphs-or-data-visualization-in-academic-research"><i class="fa fa-check"></i><b>2.2</b> Resouces about graphs or data visualization in academic research</a></li>
-<li class="chapter" data-level="2.3" data-path="recommend-resources.html"><a href="recommend-resources.html#how-to-find-more-useful-resources"><i class="fa fa-check"></i><b>2.3</b> How to find more useful resources</a></li>
+<li class="chapter" data-level="2" data-path="recommended-resources.html"><a href="recommended-resources.html"><i class="fa fa-check"></i><b>2</b> Recommended resources</a><ul>
+<li class="chapter" data-level="2.1" data-path="recommended-resources.html"><a href="recommended-resources.html#resouces-for-the-ggplot2-package"><i class="fa fa-check"></i><b>2.1</b> Resouces for the ggplot2 package</a></li>
+<li class="chapter" data-level="2.2" data-path="recommended-resources.html"><a href="recommended-resources.html#resouces-for-graphs-or-data-visualization-in-academic-research"><i class="fa fa-check"></i><b>2.2</b> Resouces for graphs or data visualization in academic research</a></li>
+<li class="chapter" data-level="2.3" data-path="recommended-resources.html"><a href="recommended-resources.html#how-to-find-more-useful-resources"><i class="fa fa-check"></i><b>2.3</b> How to find more useful resources</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="recap.html"><a href="recap.html"><i class="fa fa-check"></i><b>3</b> Recap</a></li>
 <li class="chapter" data-level="4" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>4</b> Getting started</a><ul>
@@ -154,7 +154,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.2.1" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#color-the-point"><i class="fa fa-check"></i><b>5.2.1</b> Color the point</a></li>
 </ul></li>
 <li class="chapter" data-level="5.3" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#customizing-the-graph"><i class="fa fa-check"></i><b>5.3</b> Customizing the graph</a><ul>
-<li class="chapter" data-level="5.3.1" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-point-color"><i class="fa fa-check"></i><b>5.3.1</b> Change the point color</a></li>
+<li class="chapter" data-level="5.3.1" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-point-colour"><i class="fa fa-check"></i><b>5.3.1</b> Change the point colour</a></li>
 <li class="chapter" data-level="5.3.2" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-point-size"><i class="fa fa-check"></i><b>5.3.2</b> Change the point size</a></li>
 <li class="chapter" data-level="5.3.3" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-font-size"><i class="fa fa-check"></i><b>5.3.3</b> Change the font size</a></li>
 <li class="chapter" data-level="5.3.4" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#add-in-the-pearson-correlation-coefficient-result-in-the-plot"><i class="fa fa-check"></i><b>5.3.4</b> Add in the Pearson correlation coefficient result in the plot</a></li>
@@ -190,9 +190,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="answer" class="section level1">
 <h1><span class="header-section-number">7</span> Answer</h1>
 <p><br>
-I will reaslse the answer in 5 mins.
+I will release the answer in 5 mins.
 <br>
-Below is the answer of challenge 1:</p>
+Below is the answer to challenge 1:</p>
 <div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="answer.html#cb69-1"></a><span class="kw">ggplot</span>(<span class="dt">data=</span>housedata2, <span class="kw">aes</span>(<span class="dt">x=</span> yearchi, <span class="dt">y=</span>priceper,<span class="dt">group=</span>region,<span class="dt">color=</span>region)) <span class="op">+</span><span class="kw">geom_point</span>(<span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span></span>
 <span id="cb69-2"><a href="answer.html#cb69-2"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">size =</span> <span class="dv">1</span>)<span class="op">+</span></span>
 <span id="cb69-3"><a href="answer.html#cb69-3"></a><span class="st">  </span><span class="kw">scale_colour_hue</span>(<span class="dt">breaks=</span><span class="kw">c</span>( <span class="st">&quot;London&quot;</span> ,<span class="st">&quot;South East&quot;</span> ,<span class="st">&quot;East of England&quot;</span> ,<span class="st">&quot;South West&quot;</span>,<span class="st">&quot;West Midlands&quot;</span>,<span class="st">&quot;Yorkshire and The Humber&quot;</span>,<span class="st">&quot;East Midlands&quot;</span>,<span class="st">&quot;North West&quot;</span>,<span class="st">&quot;North East&quot;</span>) )<span class="op">+</span></span>
@@ -203,7 +203,7 @@ Below is the answer of challenge 1:</p>
 <span id="cb69-8"><a href="answer.html#cb69-8"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">labels =</span> scales<span class="op">::</span>comma,)<span class="op">+</span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span>  <span class="kw">c</span>(<span class="dv">2009</span>,<span class="dv">2010</span>,<span class="dv">2011</span>,<span class="dv">2012</span>,<span class="dv">2013</span>,<span class="dv">2014</span>,<span class="dv">2015</span>,<span class="dv">2016</span>))</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-43-1.png" width="672" />
 <br>
-You also can change the legend label text by setting the labels in scale_colour_hue.</p>
+You also can change the legend label text by setting the labels using scale_colour_hue.</p>
 <div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="answer.html#cb70-1"></a><span class="kw">ggplot</span>(<span class="dt">data=</span>housedata2, <span class="kw">aes</span>(<span class="dt">x=</span> yearchi, <span class="dt">y=</span>priceper,<span class="dt">group=</span>region,<span class="dt">color=</span>region)) <span class="op">+</span><span class="kw">geom_point</span>(<span class="dt">size=</span><span class="fl">1.8</span>)<span class="op">+</span></span>
 <span id="cb70-2"><a href="answer.html#cb70-2"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">size =</span> <span class="fl">0.8</span>)<span class="op">+</span></span>
 <span id="cb70-3"><a href="answer.html#cb70-3"></a><span class="st">  </span><span class="kw">scale_colour_hue</span>(<span class="dt">breaks=</span><span class="kw">c</span>( <span class="st">&quot;London&quot;</span> ,<span class="st">&quot;South East&quot;</span> ,<span class="st">&quot;East of England&quot;</span> ,<span class="st">&quot;South West&quot;</span>,<span class="st">&quot;West Midlands&quot;</span>,<span class="st">&quot;Yorkshire and The Humber&quot;</span>,<span class="st">&quot;East Midlands&quot;</span>,<span class="st">&quot;North West&quot;</span>,<span class="st">&quot;North East&quot;</span>),<span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;LD&quot;</span>,<span class="st">&quot;SE&quot;</span>,<span class="st">&quot;EE&quot;</span>,<span class="st">&quot;SW&quot;</span>,<span class="st">&quot;WM&quot;</span>,<span class="st">&quot;YH&quot;</span>,<span class="st">&quot;EM&quot;</span>,<span class="st">&quot;NW&quot;</span>,<span class="st">&quot;NE&quot;</span>) )<span class="op">+</span></span>
@@ -214,7 +214,7 @@ You also can change the legend label text by setting the labels in scale_colour_
 <span id="cb70-8"><a href="answer.html#cb70-8"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">labels =</span> scales<span class="op">::</span>comma,)<span class="op">+</span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">2009</span>,<span class="dv">2010</span>,<span class="dv">2011</span>,<span class="dv">2012</span>,<span class="dv">2013</span>,<span class="dv">2014</span>,<span class="dv">2015</span>,<span class="dv">2016</span>))</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-44-1.png" width="672" />
 <br>
-Below is the answer of challenge 2:</p>
+Below is the answer to challenge 2:</p>
 <div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="answer.html#cb71-1"></a><span class="kw">ggplot</span>(<span class="dt">data=</span>result1,<span class="kw">aes</span>(<span class="dt">x=</span>yearchi, <span class="dt">y=</span>ranknew,<span class="dt">group=</span>region,<span class="dt">color=</span>region))<span class="op">+</span></span>
 <span id="cb71-2"><a href="answer.html#cb71-2"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">color =</span> region, <span class="dt">alpha =</span> <span class="dv">1</span>), <span class="dt">size =</span> <span class="fl">0.7</span>) <span class="op">+</span></span>
 <span id="cb71-3"><a href="answer.html#cb71-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data =</span> result1[(result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2009&quot;</span><span class="op">|</span>result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2016&quot;</span>),],</span>

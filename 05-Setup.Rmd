@@ -2,7 +2,7 @@
   
 ## Installing ggplot2 package
 
-If you have installed ggplot2 package before, you can jump to the next step.
+If you have installed ggplot2 package already, you can jump to the next step.
 ```{r}
 #install.packages("ggplot2")
 #install.packages("ggpubr")
@@ -17,14 +17,14 @@ library(ggplot2)
 library(ggpubr)
 ```
 
-**Note:** Once you loaded the package successfully, there will be a check mark display before the package under your Packages tab at the bottom right pane.
+**Note:** Once you have loaded the package successfully, there will be a check mark display before the package under your Packages tab at the bottom right pane.
 <center>
 
 ![](loadpackage.png)
 </center>
 
 ## Dataset
-Let’s start by loading two datasets. The first dataset records 924 transaction in 2009 for two local authorities in England. The second the data records the median house price per square meter for each region in England between 2009 and 2016. These two datasets are derived from a linked house price in England ([CASA working paper213](https://www.ucl.ac.uk/bartlett/casa/publications/2019/sep/casa-working-paper-213)).
+Let’s start by loading two datasets. The first dataset records 924 transactions in 2009 for two local authorities in England. The second  dataset records the median house price per square meter for each region in England between 2009 and 2016. These two datasets are derived from a linked house price in England ([CASA working paper213](https://www.ucl.ac.uk/bartlett/casa/publications/2019/sep/casa-working-paper-213)).
 
 ```{r}
 # read in the first dataset

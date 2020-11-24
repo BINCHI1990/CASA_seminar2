@@ -1,7 +1,7 @@
 introduction
-recommend-resources
-resouces-about-ggplot2-package
-resouces-about-graphs-or-data-visualization-in-academic-research
+recommended-resources
+resouces-for-the-ggplot2-package
+resouces-for-graphs-or-data-visualization-in-academic-research
 how-to-find-more-useful-resources
 recap
 getting-started
@@ -13,7 +13,7 @@ basic-components-of-a-ggplot2-plot
 building-a-simple-ggplot-plot
 color-the-point
 customizing-the-graph
-change-the-point-color
+change-the-point-colour
 change-the-point-size
 formatting-y-axis-and-labels
 change-the-font-size

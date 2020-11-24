@@ -1,6 +1,6 @@
 # Challenges
 
-Let us move to the challenge part to exam your understanding of this seminar. Below are two graphs created by ggplot() based on housedata2.
+Let us move to the challenge part of the seminar to examine your understanding. Below are two graphs created by ggplot() based on housedata2.
 
 ## Challenge 1: reorder the items in legend
 ```{r}

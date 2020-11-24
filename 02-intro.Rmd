@@ -1,21 +1,21 @@
 # Introduction 
 <br><br>
 
-This second CASA0005 GI Systems and Science seminar. It aims to advance your data visualization skills in R using the ggplot2 package.
+This is the second CASA0005 GI Systems and Science seminar. It aims to advance your data visualization skills in R using the ggplot2 package.
 
 <br><br>
-By the end of the seminar you will be able to:
+By the end of the seminar you will have:
 <br>
 <style>
 div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 
-- Advanced your knowledge about ggplot2 in R 
+- Advanced your knowledge of ggplot2 in R 
 <br>
-- Know how to advanced customization in ggplot
+- Learnt some advanced customization in ggplot
 <br>
-- Create a high resolution graph for your research
+- Created a high resolution graph for your research
 <br>
-- Trouble-shooting by yourself
+- Learnt to trouble-shoot by yourself
 </div>

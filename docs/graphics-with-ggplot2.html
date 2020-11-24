@@ -137,10 +137,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li><a href="index.html#section"></a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="recommend-resources.html"><a href="recommend-resources.html"><i class="fa fa-check"></i><b>2</b> Recommend resources</a><ul>
-<li class="chapter" data-level="2.1" data-path="recommend-resources.html"><a href="recommend-resources.html#resouces-about-ggplot2-package"><i class="fa fa-check"></i><b>2.1</b> Resouces about ggplot2 package</a></li>
-<li class="chapter" data-level="2.2" data-path="recommend-resources.html"><a href="recommend-resources.html#resouces-about-graphs-or-data-visualization-in-academic-research"><i class="fa fa-check"></i><b>2.2</b> Resouces about graphs or data visualization in academic research</a></li>
-<li class="chapter" data-level="2.3" data-path="recommend-resources.html"><a href="recommend-resources.html#how-to-find-more-useful-resources"><i class="fa fa-check"></i><b>2.3</b> How to find more useful resources</a></li>
+<li class="chapter" data-level="2" data-path="recommended-resources.html"><a href="recommended-resources.html"><i class="fa fa-check"></i><b>2</b> Recommended resources</a><ul>
+<li class="chapter" data-level="2.1" data-path="recommended-resources.html"><a href="recommended-resources.html#resouces-for-the-ggplot2-package"><i class="fa fa-check"></i><b>2.1</b> Resouces for the ggplot2 package</a></li>
+<li class="chapter" data-level="2.2" data-path="recommended-resources.html"><a href="recommended-resources.html#resouces-for-graphs-or-data-visualization-in-academic-research"><i class="fa fa-check"></i><b>2.2</b> Resouces for graphs or data visualization in academic research</a></li>
+<li class="chapter" data-level="2.3" data-path="recommended-resources.html"><a href="recommended-resources.html#how-to-find-more-useful-resources"><i class="fa fa-check"></i><b>2.3</b> How to find more useful resources</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="recap.html"><a href="recap.html"><i class="fa fa-check"></i><b>3</b> Recap</a></li>
 <li class="chapter" data-level="4" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>4</b> Getting started</a><ul>
@@ -154,7 +154,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.2.1" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#color-the-point"><i class="fa fa-check"></i><b>5.2.1</b> Color the point</a></li>
 </ul></li>
 <li class="chapter" data-level="5.3" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#customizing-the-graph"><i class="fa fa-check"></i><b>5.3</b> Customizing the graph</a><ul>
-<li class="chapter" data-level="5.3.1" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-point-color"><i class="fa fa-check"></i><b>5.3.1</b> Change the point color</a></li>
+<li class="chapter" data-level="5.3.1" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-point-colour"><i class="fa fa-check"></i><b>5.3.1</b> Change the point colour</a></li>
 <li class="chapter" data-level="5.3.2" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-point-size"><i class="fa fa-check"></i><b>5.3.2</b> Change the point size</a></li>
 <li class="chapter" data-level="5.3.3" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#change-the-font-size"><i class="fa fa-check"></i><b>5.3.3</b> Change the font size</a></li>
 <li class="chapter" data-level="5.3.4" data-path="graphics-with-ggplot2.html"><a href="graphics-with-ggplot2.html#add-in-the-pearson-correlation-coefficient-result-in-the-plot"><i class="fa fa-check"></i><b>5.3.4</b> Add in the Pearson correlation coefficient result in the plot</a></li>
@@ -199,10 +199,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="building-a-simple-ggplot-plot" class="section level2">
 <h2><span class="header-section-number">5.2</span> Building a simple ggplot plot</h2>
-<p>Now let us start with creating a scatter plot using ggplot().The scatter plot is created to explore the relationship between transaction price and total floor area in two different local authorities.
+<p>Now let us start by creating a scatter plot using ggplot().The scatter plot is created to explore the relationship between transaction price and total floor area in two different local authorities.
 <br>
-### Make sure your object is data frames
-Since ggplot only works with <strong>data</strong> frames, we use <code>is.data.frame()</code>to check the whether the data is a data frame.If it is not, you need to tranfer it to a data frame</p>
+### Make sure your datasets are data frames
+Since ggplot only works with <strong>data</strong> frames, we use <code>is.data.frame()</code>to check the whether the data is a data frame. If it is not, you need to convert it to a data frame</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="graphics-with-ggplot2.html#cb4-1"></a><span class="co">#test the data set is a data frame</span></span>
 <span id="cb4-2"><a href="graphics-with-ggplot2.html#cb4-2"></a><span class="co">#is.data.frame(housedata1)</span></span>
 <span id="cb4-3"><a href="graphics-with-ggplot2.html#cb4-3"></a><span class="co">#is.data.frame(housedata2)</span></span></code></pre></div>
@@ -222,7 +222,7 @@ Since ggplot only works with <strong>data</strong> frames, we use <code>is.data.
 <span id="cb7-2"><a href="graphics-with-ggplot2.html#cb7-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm))</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-7-1.png" width="672" />
 ### Add a linear regression line
-To add a linear regression line to a scatter plot, we can do this by adding <code>stat_smooth()</code>,<code>method = lm</code> refers to fit the data linear model function</p>
+To add a linear regression line to a scatter plot, we can do this by adding <code>stat_smooth()</code>,<code>method = lm</code> where lm means linear model i.e. use linear regression</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="graphics-with-ggplot2.html#cb8-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb8-2"><a href="graphics-with-ggplot2.html#cb8-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm))<span class="op">+</span></span>
 <span id="cb8-3"><a href="graphics-with-ggplot2.html#cb8-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>)</span></code></pre></div>
@@ -240,9 +240,9 @@ To add a linear regression line to a scatter plot, we can do this by adding <cod
 </div>
 <div id="customizing-the-graph" class="section level2">
 <h2><span class="header-section-number">5.3</span> Customizing the graph</h2>
-<div id="change-the-point-color" class="section level3">
-<h3><span class="header-section-number">5.3.1</span> Change the point color</h3>
-<p>The color of the points can be control with the <code>color</code> aesthetic.Below is the code to color all the points in blue.</p>
+<div id="change-the-point-colour" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> Change the point colour</h3>
+<p>The colour of the points can be control with the <code>color</code> aesthetic.Below is the code to colour all the points in blue.</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="graphics-with-ggplot2.html#cb12-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb12-2"><a href="graphics-with-ggplot2.html#cb12-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>)<span class="op">+</span></span>
 <span id="cb12-3"><a href="graphics-with-ggplot2.html#cb12-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>)<span class="op">+</span></span>
@@ -261,7 +261,7 @@ To add a linear regression line to a scatter plot, we can do this by adding <cod
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-11-1.png" width="672" />
 <br>
 ### Change the point shape
-The size of the points can be controlled with the <code>shape</code> aesthetic. The default shape is solid circles and you can change with <a href="https://blog.albertkuo.me/post/point-shape-options-in-ggplot/">Point Shape Options in ggplot</a>. The following code show you how to plot the point as solid squares.</p>
+The size of the points can be controlled with the <code>shape</code> aesthetic. The default shape is solid circles and you can change with <a href="https://blog.albertkuo.me/post/point-shape-options-in-ggplot/">Point Shape Options in ggplot</a>. The following code shows you how to plot the points as solid squares.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="graphics-with-ggplot2.html#cb16-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb16-2"><a href="graphics-with-ggplot2.html#cb16-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>, <span class="dt">shape=</span><span class="dv">15</span>)<span class="op">+</span></span>
 <span id="cb16-3"><a href="graphics-with-ggplot2.html#cb16-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>)<span class="op">+</span></span>
@@ -270,7 +270,7 @@ The size of the points can be controlled with the <code>shape</code> aesthetic. 
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-12-1.png" width="672" />
 <br>
 ### Modify fitted regression lines</p>
-<p>The default color of the fit line is blue. This can be change by setting <code>colour</code>,The following code set a red fit line.</p>
+<p>The default color of the fit line is blue. This can be change by setting <code>colour</code>,The following code sets a red fit line.</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="graphics-with-ggplot2.html#cb18-1"></a><span class="co">#method 1</span></span>
 <span id="cb18-2"><a href="graphics-with-ggplot2.html#cb18-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb18-3"><a href="graphics-with-ggplot2.html#cb18-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
@@ -285,7 +285,7 @@ The size of the points can be controlled with the <code>shape</code> aesthetic. 
 <span id="cb20-5"><a href="graphics-with-ggplot2.html#cb20-5"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-13-2.png" width="672" />
-The grey area near the fit line is confidence region.you can disabled it with <code>se = FALSE</code></p>
+The grey area near the fit line is the confidence region.you can disabled it with <code>se = FALSE</code></p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="graphics-with-ggplot2.html#cb22-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb22-2"><a href="graphics-with-ggplot2.html#cb22-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb22-3"><a href="graphics-with-ggplot2.html#cb22-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
@@ -294,7 +294,7 @@ The grey area near the fit line is confidence region.you can disabled it with <c
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-14-1.png" width="672" />
 <br>
 ### Change the axis titles
-labs function can be used to change axis labels.Here are two ways to change the axis title.</p>
+The labs function can be used to change axis labels.Here are two ways to change the axis title.</p>
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="graphics-with-ggplot2.html#cb24-1"></a><span class="co">#Method 1</span></span>
 <span id="cb24-2"><a href="graphics-with-ggplot2.html#cb24-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb24-3"><a href="graphics-with-ggplot2.html#cb24-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
@@ -311,7 +311,7 @@ labs function can be used to change axis labels.Here are two ways to change the 
 ### Add axis units</p>
 <div id="formatting-y-axis-and-labels" class="section level4">
 <h4><span class="header-section-number">5.3.2.1</span> Formatting y axis and labels</h4>
-<p>Below is the code for add in the y axis unit in ggplot().</p>
+<p>Below is the code for adding in the y axis units in ggplot().</p>
 <div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="graphics-with-ggplot2.html#cb26-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb26-2"><a href="graphics-with-ggplot2.html#cb26-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb26-3"><a href="graphics-with-ggplot2.html#cb26-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -319,7 +319,7 @@ labs function can be used to change axis labels.Here are two ways to change the 
 <span id="cb26-5"><a href="graphics-with-ggplot2.html#cb26-5"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;Transaction price (£)&quot;</span>)</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-16-1.png" width="672" />
 <br>
-If you want to change scale the y axis to thousands, you can use <code>scale_y_continuous</code>.</p>
+If you want to change the units of the y axis to thousands of pounds, you can use <code>scale_y_continuous</code>.</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="graphics-with-ggplot2.html#cb27-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb27-2"><a href="graphics-with-ggplot2.html#cb27-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb27-3"><a href="graphics-with-ggplot2.html#cb27-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -327,7 +327,7 @@ If you want to change scale the y axis to thousands, you can use <code>scale_y_c
 <span id="cb27-5"><a href="graphics-with-ggplot2.html#cb27-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Total floor area&quot;</span>)</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-17-1.png" width="672" />
 <br>
-You can also format the y labels more readable, with some common formats in scales package.Below is the code for formatting y labels in comma.</p>
+You can also format the y labels more readably, with some common formats from the scales package.Below is the code for formatting y labels in comma.</p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="graphics-with-ggplot2.html#cb28-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb28-2"><a href="graphics-with-ggplot2.html#cb28-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb28-3"><a href="graphics-with-ggplot2.html#cb28-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -335,11 +335,11 @@ You can also format the y labels more readable, with some common formats in scal
 <span id="cb28-5"><a href="graphics-with-ggplot2.html#cb28-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Total floor area&quot;</span>)</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-18-1.png" width="672" />
 <br><br />
-- to transfer y axis to a percentage scale ,you can use <code>scale_y_continuous(labels = scales::percent)' - to display dollars on y axis, you can use</code>scale_y_continuous(labels = scales::dollar)’
-- to display euro on y axis, you can use `scale_y_continuous(labels = scales::dollar_format(suffix = “€”, prefix = ""))’
+- to convert the y axis to a percentage scale ,you can use <code>scale_y_continuous(labels = scales::percent)' - to display dollars on the y axis, you can use</code>scale_y_continuous(labels = scales::dollar)’
+- to display euros on the y axis, you can use `scale_y_continuous(labels = scales::dollar_format(suffix = “€”, prefix = ""))’
 <br>
 ### Add x axis unit
-Below listed two approach to label the math notation in x axis. <a href="https://trinkerrstuff.wordpress.com/2018/03/15/2246/">Math Notation for R Plot Titles: expression, bquote, &amp; Greek Letters</a> offers more ‘bquote’ application in R.</p>
+Below are listed two approaches to labelling the x axis using math notation. <a href="https://trinkerrstuff.wordpress.com/2018/03/15/2246/">Math Notation for R Plot Titles: expression, bquote, &amp; Greek Letters</a> offers more ‘bquote’ applications in R.</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="graphics-with-ggplot2.html#cb29-1"></a><span class="co">#method 1</span></span>
 <span id="cb29-2"><a href="graphics-with-ggplot2.html#cb29-2"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb29-3"><a href="graphics-with-ggplot2.html#cb29-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
@@ -356,7 +356,7 @@ Below listed two approach to label the math notation in x axis. <a href="https:/
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-19-2.png" width="672" />
 <br>
 ### Change x-axis breaks
-You can use <code>breaks</code> function to change the x or y axis breaks labels.</p>
+You can use the <code>breaks</code> function to change the x or y axis breaks.</p>
 <div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="graphics-with-ggplot2.html#cb31-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb31-2"><a href="graphics-with-ggplot2.html#cb31-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb31-3"><a href="graphics-with-ggplot2.html#cb31-3"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>,<span class="dt">se =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
@@ -375,8 +375,8 @@ You can use <code>breaks</code> function to change the x or y axis breaks labels
 <span id="cb33-7"><a href="graphics-with-ggplot2.html#cb33-7"></a><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">50</span>,<span class="dv">300</span>,<span class="dv">50</span>))</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-20-2.png" width="672" />
 <br>
-### Specify axiss plot range
-You can use <code>limits</code> to modify the axis limits.Below is an example to plot the total floor area below 300 .</p>
+### Specify axis plot range
+You can use <code>limits</code> to modify the axis limits.Below is an example to limit the x axis. It plots the total floor area below 300 .</p>
 <div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="graphics-with-ggplot2.html#cb34-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb34-2"><a href="graphics-with-ggplot2.html#cb34-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb34-3"><a href="graphics-with-ggplot2.html#cb34-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -394,7 +394,8 @@ You can follow the same step for your y axis.</p>
 <span id="cb36-5"><a href="graphics-with-ggplot2.html#cb36-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">bquote</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
 <span id="cb36-6"><a href="graphics-with-ggplot2.html#cb36-6"></a><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="dv">50</span>,<span class="dv">300</span>,<span class="dv">50</span>),<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">300</span>))<span class="op">+</span></span>
 <span id="cb36-7"><a href="graphics-with-ggplot2.html#cb36-7"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1200</span>))</span></code></pre></div>
-<pre><code>## Scale for &#39;y&#39; is already present. Adding another scale for &#39;y&#39;, which will replace the existing scale.</code></pre>
+<pre><code>## Scale for &#39;y&#39; is already present. Adding another scale for &#39;y&#39;, which will replace the existing
+## scale.</code></pre>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
 <p><br>
 ##
@@ -409,7 +410,7 @@ You can follow the same step for your y axis.</p>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
 <p><br>
 ### Change themes
-There are eight themes that can be directlty used to give the plot a customized look.<code>theme_grey()</code> is the default ggplot2 theme, you can use <code>theme_bw()</code> to remove it.</p>
+There are eight themes that can be directly used to give the plot a customized look.<code>theme_grey()</code> is the default ggplot2 theme, you can use <code>theme_bw()</code> to remove it.</p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="graphics-with-ggplot2.html#cb39-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb39-2"><a href="graphics-with-ggplot2.html#cb39-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb39-3"><a href="graphics-with-ggplot2.html#cb39-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -417,7 +418,7 @@ There are eight themes that can be directlty used to give the plot a customized 
 <span id="cb39-5"><a href="graphics-with-ggplot2.html#cb39-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="kw">expression</span>(<span class="st">&quot;Total floor area (&quot;</span> <span class="op">~</span><span class="st"> </span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span></span>
 <span id="cb39-6"><a href="graphics-with-ggplot2.html#cb39-6"></a><span class="st">  </span><span class="kw">theme_bw</span>()</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
-<p>Blow are listed the rest of six other themes, from which you can choose your faviate for your academic writing.</p>
+<p>Below are listed the rest of six other themes, from which you can choose your favourite for your academic writing.</p>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="graphics-with-ggplot2.html#cb40-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb40-2"><a href="graphics-with-ggplot2.html#cb40-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb40-3"><a href="graphics-with-ggplot2.html#cb40-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -467,9 +468,9 @@ The R package <strong>ggthemes</strong> provides another gallery of custom ggplo
 </div>
 <div id="change-the-font-size" class="section level3">
 <h3><span class="header-section-number">5.3.3</span> Change the font size</h3>
-<p>You can manual customize the ggplot by modify the components in <a href="https://ggplot2.tidyverse.org/reference/theme.html">theme()</a>. Below I give a series of examples on how to change the font size in the plot, let us do step-by-step.
+<p>You can manually customize the ggplot by modifying the components in <a href="https://ggplot2.tidyverse.org/reference/theme.html">theme()</a>. Below I give a series of examples on how to change the font size in the plot. Let us do it step-by-step.
 <br>
-(1) Change the font size of text in x and y axis and color in red</p>
+(1) Change the font size of text in x and y axis and colour it red</p>
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="graphics-with-ggplot2.html#cb46-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb46-2"><a href="graphics-with-ggplot2.html#cb46-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb46-3"><a href="graphics-with-ggplot2.html#cb46-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -480,7 +481,7 @@ The R package <strong>ggthemes</strong> provides another gallery of custom ggplo
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-31-1.png" width="672" />
 <br></p>
 <ol start="2" style="list-style-type: decimal">
-<li>change the font size of x and y label in the plot and color in red</li>
+<li>change the font size of x and y labels in the plot and colour them red</li>
 </ol>
 <div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="graphics-with-ggplot2.html#cb47-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb47-2"><a href="graphics-with-ggplot2.html#cb47-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
@@ -491,7 +492,7 @@ The R package <strong>ggthemes</strong> provides another gallery of custom ggplo
 <span id="cb47-7"><a href="graphics-with-ggplot2.html#cb47-7"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>,<span class="dt">color=</span><span class="st">&quot;red&quot;</span>))</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-32-1.png" width="672" />
 <br>
-(3) change the font size of facet labels in the plot and color in red</p>
+(3) change the font size of facet labels in the plot and colour them red</p>
 <div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="graphics-with-ggplot2.html#cb48-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb48-2"><a href="graphics-with-ggplot2.html#cb48-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb48-3"><a href="graphics-with-ggplot2.html#cb48-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -501,7 +502,7 @@ The R package <strong>ggthemes</strong> provides another gallery of custom ggplo
 <span id="cb48-7"><a href="graphics-with-ggplot2.html#cb48-7"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>,<span class="dt">color=</span><span class="st">&quot;red&quot;</span>))</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-33-1.png" width="672" />
 <br>
-(4) change the font size of legend item labels in the plot and color in red</p>
+(4) change the font size of legend item labels in the plot and colour them red</p>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="graphics-with-ggplot2.html#cb49-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb49-2"><a href="graphics-with-ggplot2.html#cb49-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm),<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb49-3"><a href="graphics-with-ggplot2.html#cb49-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -511,7 +512,7 @@ The R package <strong>ggthemes</strong> provides another gallery of custom ggplo
 <span id="cb49-7"><a href="graphics-with-ggplot2.html#cb49-7"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>,<span class="dt">color=</span><span class="st">&quot;red&quot;</span>))</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
 <div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="graphics-with-ggplot2.html#cb50-1"></a><span class="co">##</span></span></code></pre></div>
-<p>(5)change the font size of title of legend in the plot and color in red</p>
+<p>(5)change the font size of title of the legend in the plot and colour it red</p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="graphics-with-ggplot2.html#cb51-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb51-2"><a href="graphics-with-ggplot2.html#cb51-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm),<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb51-3"><a href="graphics-with-ggplot2.html#cb51-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -521,7 +522,7 @@ The R package <strong>ggthemes</strong> provides another gallery of custom ggplo
 <span id="cb51-7"><a href="graphics-with-ggplot2.html#cb51-7"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">legend.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>,<span class="dt">color=</span><span class="st">&quot;red&quot;</span>))</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
 <div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="graphics-with-ggplot2.html#cb52-1"></a><span class="co">##</span></span></code></pre></div>
-<p>You may wonder about how to change the lengend text in above plot. Below is the answer:</p>
+<p>You may wonder about how to change the legend text in the above plot. Below is the answer:</p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="graphics-with-ggplot2.html#cb53-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>,<span class="dt">group=</span>ldnm))<span class="op">+</span></span>
 <span id="cb53-2"><a href="graphics-with-ggplot2.html#cb53-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color=</span>ldnm),<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb53-3"><a href="graphics-with-ggplot2.html#cb53-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -535,7 +536,7 @@ The R package <strong>ggthemes</strong> provides another gallery of custom ggplo
 </div>
 <div id="add-in-the-pearson-correlation-coefficient-result-in-the-plot" class="section level3">
 <h3><span class="header-section-number">5.3.4</span> Add in the Pearson correlation coefficient result in the plot</h3>
-<p>Since the aims of this satter plot is to explore the relationship between transaction price and property’s total floor area. Pearson correlation coefficient is more suitable to consider in the plot.Here we use stat_cor() from the package ggpubr.</p>
+<p>Since the aim of this scatter plot is to explore the relationship between transaction price and property’s total floor area. The Pearson correlation coefficient is a suitable measure to show in the plot.Here we use stat_cor() from the package ggpubr.</p>
 <div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="graphics-with-ggplot2.html#cb54-1"></a><span class="co"># add Pearson correlation coefficient and p value in the graph</span></span>
 <span id="cb54-2"><a href="graphics-with-ggplot2.html#cb54-2"></a></span>
 <span id="cb54-3"><a href="graphics-with-ggplot2.html#cb54-3"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>))<span class="op">+</span></span>
@@ -563,10 +564,10 @@ You may wonder how to change R to rho. Here is one solution I found (<a href="ht
 <span id="cb58-8"><a href="graphics-with-ggplot2.html#cb58-8"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>))<span class="op">+</span></span>
 <span id="cb58-9"><a href="graphics-with-ggplot2.html#cb58-9"></a><span class="st"> </span><span class="kw">stat_cor</span>(<span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-38-1.png" width="672" />
-Tip: Once you type <code>trace(ggpubr:::.cor_test, edit=TRUE)</code> in R studio, you will get a edit window as shown in above. You only need change the red square part from left to right.</p>
+Tip: Once you type <code>trace(ggpubr:::.cor_test, edit=TRUE)</code> in R studio, you will get an edit window as shown above. You need only change the red square part from left to right.</p>
 <p><img src="rho.png" out.wide="100%" /></p>
 <p><br>
-You also can change the label text location as below:</p>
+You also can change the label text location as shown below:</p>
 <div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="graphics-with-ggplot2.html#cb59-1"></a><span class="kw">ggplot</span>(housedata1,<span class="kw">aes</span>(<span class="dt">x=</span>tfarea,<span class="dt">y=</span>price<span class="op">/</span><span class="dv">1000</span>))<span class="op">+</span></span>
 <span id="cb59-2"><a href="graphics-with-ggplot2.html#cb59-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&quot;#56b4e9&quot;</span>,<span class="dt">size =</span> <span class="fl">1.2</span>)<span class="op">+</span></span>
 <span id="cb59-3"><a href="graphics-with-ggplot2.html#cb59-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>ldnm)<span class="op">+</span></span>
@@ -580,7 +581,7 @@ You also can change the label text location as below:</p>
 </div>
 <div id="saving-graphs" class="section level2">
 <h2><span class="header-section-number">5.4</span> Saving graphs</h2>
-<p>TIFF files exported directly from RStudio will only achieve a resolution of 72dpi.dpi is a measure of resolution – the higher the dpi, the sharper the image. <code>ggsave</code> is used to save a 500 dpi graph from the screen to a file.</p>
+<p>TIFF files exported directly from RStudio will only achieve a resolution of 72dpi.dpi as a measure of resolution – the higher the dpi, the sharper the image. <code>ggsave</code> is used to save a 500 dpi graph from the screen to a file.</p>
 <div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="graphics-with-ggplot2.html#cb60-1"></a><span class="co">#get you working directory</span></span>
 <span id="cb60-2"><a href="graphics-with-ggplot2.html#cb60-2"></a><span class="kw">getwd</span>()</span></code></pre></div>
 <pre><code>## [1] &quot;D:/R/CASA_seminar2&quot;</code></pre>
