@@ -208,18 +208,18 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(bquote("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(bquote("Total floor area (" ~ m^2 ~ ")"))+
   scale_x_continuous(breaks = seq(50,300,50),limits = c(0, 300))
 ```
 <br>
 You can follow the same step for your y axis.
 
-```{r}
+```{r,warning= FALSE,error=FALSE}
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(bquote("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(bquote("Total floor area (" ~ m^2 ~ ")"))+
   scale_x_continuous(breaks = seq(50,300,50),limits = c(0, 300))+
   scale_y_continuous(limits = c(0, 1200))
 ```
@@ -234,7 +234,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   ggtitle("Transaction price against total floor area in local authorities, 2009")
  
 ```
@@ -247,7 +247,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   ggtitle("Transaction price against total floor area in local authorities, 2009")+
   theme_bw()
 ```
@@ -259,7 +259,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   ggtitle("Transaction price against total floor area in local authorities, 2009")+
    theme_linedraw()
 ```
@@ -269,7 +269,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   ggtitle("Transaction price against total floor area in local authorities, 2009")+
    theme_light()
 ```
@@ -279,7 +279,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   ggtitle("Transaction price against total floor area in local authorities, 2009")+
    theme_dark()
 ```
@@ -289,7 +289,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   theme_minimal()
 ```
 
@@ -298,7 +298,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   theme_classic()
 ```
 
@@ -397,27 +397,31 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 <br>
 
 ### Add in the Pearson correlation coefficient result in the plot
-Since the aims of this satter plot is to explore the relationship between transaction price and property’s total floor area. Pearson correlation coefficient is more suitable to consider in the plot.
+Since the aims of this satter plot is to explore the relationship between transaction price and property’s total floor area. Pearson correlation coefficient is more suitable to consider in the plot.Here we use stat_cor() from the package ggpubr.
 ```{r}
-# calutate the Pearson correlation coefficient for each local authority 
-cor.test(housedata1[housedata1$laua=="E07000208",]$price,housedata1[housedata1$laua=="E07000208",]$tfarea,method="pearson")$p.value
-cor.test(housedata1[housedata1$laua=="E07000208",]$price,housedata1[housedata1$laua=="E07000208",]$tfarea,method="pearson")
-#0.86
-cor.test(housedata1[housedata1$laua=="E09000001",]$price,housedata1[housedata1$laua=="E09000001",]$tfarea,method="pearson")$p.value
-cor.test(housedata1[housedata1$laua=="E09000001",]$price,housedata1[housedata1$laua=="E09000001",]$tfarea,method="pearson")
-#0.85
-
 # add coefficient and p value in the graph
+library(ggpubr)
 ggplot(housedata1,aes(x=tfarea,y=price/1000))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
   xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   theme_bw()+
-  theme(axis.title = element_text(size=15),axis.text = element_text(size=13),strip.text = element_text(size=15))
+  theme(axis.title = element_text(size=15),axis.text = element_text(size=13),strip.text = element_text(size=15))+
+ stat_cor(method="pearson")
  
 
 ```
+<br>
+
+```{r}
+
+
+
+```
+
+
+
 ## Saving graphs
 TIFF files exported directly from RStudio will only achieve a resolution of 72dpi.dpi is a measure of resolution – the higher the dpi, the sharper the image. ggsave is used to save a 500 dpi graph from the screen to a file.
 

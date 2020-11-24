@@ -1,35 +1,79 @@
-# Challenge
+# Challenges
 
 Let us move to the challenge part to exam your understanding of this seminar. Below are two graphs created by ggplot() based on housedata2.
 
-##Challenge 1
+## Challenge 1: reorder the items in legend
 ```{r}
-head(housedata2)
-
-
 ggplot(data=housedata2, aes(x= yearchi, y=priceper,group=region,color=region)) +geom_point(size=2)+
   geom_line(size = 1)+
- scale_fill_manual(breaks=c("North East","North West","East Midlands","Yorkshire and The Humber","West Midlands","South West","East of England","South East","London"),
-                    values = c("#E41A1C", "#377EB8" ,"#4DAF4A", "#984EA3", "#FF7F00" ,"#FFFF33", "#A65628", "#F781BF" ,"#999999"))+
   theme_bw()+
-  theme(axis.title = element_text(size=15), axis.text = element_text(size=13),strip.text = element_text(size=15),legend.text = element_text(size=13),legend.title = element_text(size=15))+
+  theme(axis.title = element_text(size=15), axis.text = element_text(size=13),strip.text = element_text(size=15),legend.text = element_text(size=11),legend.title = element_text(size=13))+
   ylab(bquote("House price ( £/"~m^2 ~ ")"))+xlab("Year")+
-  guides(color=guide_legend("Location")) +
-  scale_y_continuous(labels = scales::comma,)+scale_x_continuous(breaks = c(2009,2011,2013,2015,2016))
+  guides(color=guide_legend("Region")) +
+  scale_y_continuous(labels = scales::comma,)+scale_x_continuous(breaks = c(2009,2010,2011,2012,2013,2014,2015,2016))
 
 
 ```
 <br>
-##Challenge 2
+  
+## Challenge 2 Manualy control the colour of the line and point
+
 ```{r}
+head(housedata2)
+# Caluste the rank order of house price in each region within the same transaction year.
+result1 <- data.frame()
+ms <- 0
+autodata <-0
+j <- 1
+list <-unique(housedata2$yearchi)
+for(ms in list)
+{
+  print(ms)
+  print(j)
+  autodata <- housedata2[housedata2$yearchi==ms,]
+  autodata$ranknew <- rank(-autodata$priceper)
+  autodata$ranknew1 <- rank(autodata$priceper)
+  result1 <- rbind(result1,autodata)
+  j <- j+1
+  
+}
 
+head(result1)
 
+# Plot house price rank order change between 2009 and 2016
 
-
-
-
-
-
+ggplot(data=result1,aes(x=yearchi, y=ranknew,group=region,color=region))+
+  geom_line(aes(color = region, alpha = 1), size = 0.7) +
+  geom_point(data = result1[(result1$yearchi == "2009"|result1$yearchi == "2016"),],
+             aes(x=yearchi, y=ranknew,group=region,color = region),
+             size = 8)+
+  geom_text(data = result1[result1$yearchi == "2016",], 
+            aes(label = region) , 
+            position = position_nudge(x = 0.4),
+            hjust = 0,
+            size = 5) +
+  geom_label(data = result1[(result1$yearchi == "2009"|result1$yearchi == "2016"),],
+             aes(label = ranknew), 
+             color="white",
+             alpha = 0,
+             size = 5,
+             label.padding = unit(0.00, "lines"), 
+             label.size = 0.0)+
+  theme_bw()+ scale_x_continuous(limits = c(2007, 2018),breaks = c(2009,2010,2011,2012,2013,2014,2015,2016))+
+  scale_y_reverse( breaks = unique(result1$ranknew))+
+  theme(legend.position = "none",axis.text = element_text(size=13))+
+  theme(axis.line=element_blank(),
+      axis.text.y=element_blank(),
+      axis.ticks=element_blank(),
+      axis.title.x=element_blank(),
+      axis.title.y=element_blank(),
+      legend.position="none",
+      panel.background=element_blank(),
+      panel.border=element_blank(),
+      panel.grid.major.y = element_blank(),
+      panel.grid.minor.x=element_blank(),
+      panel.grid.minor.y=element_blank(),
+      plot.background=element_blank())
 
 ```
 

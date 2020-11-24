@@ -5,6 +5,7 @@
 If you have installed ggplot2 package before, you can jump to the next step.
 ```{r}
 #install.packages("ggplot2")
+#install.packages("ggpubr")
 ```
 
 

@@ -18,6 +18,9 @@ change-the-point-size
 formatting-y-axis-and-labels
 change-the-font-size
 add-in-the-pearson-correlation-coefficient-result-in-the-plot
+saving-graphs
 extensions
-challenge
+challenges
+challenge-1-reorder-the-items-in-legend
+challenge-2-manualy-control-the-colour-of-the-line-and-point
 answer
