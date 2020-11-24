@@ -1,4 +1,4 @@
-
+This the first draft of the CASA0005 seminar 2
 
 - [ ] 2. Render locally with `bookdown::render_book("index.Rmd")`.
 

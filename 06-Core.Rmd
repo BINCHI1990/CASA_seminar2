@@ -367,7 +367,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
 
 ##
 ```
-<br>
+  
 (5)change the font size of title of legend in the plot and color in red
 
 ```{r}
@@ -380,7 +380,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   theme(axis.title = element_text(size=15),axis.text = element_text(size=13),strip.text = element_text(size=15),legend.text = element_text(size=13),legend.title = element_text(size=15,color="red"))
 ##
 ```
-<br>
+  
 You may wonder about how to change the lengend text in above plot. Below is the answer:
 
 ```{r}

@@ -22,5 +22,5 @@ saving-graphs
 extensions
 challenges
 challenge-1-reorder-the-items-in-legend
-challenge-2-manualy-control-the-colour-of-the-line-and-point
+challenge-2-manualy-setting-the-colour-of-the-line-and-point
 answer

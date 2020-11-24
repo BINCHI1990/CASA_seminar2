@@ -30,14 +30,15 @@ Meanwhile,different journals or publishers have different requirements for figur
 
 Graphic in academic research is generally expected to be clear, concise and easy to read. Now let’s have a look at some examples in GIS course assignment last year.
 
-<br>
+<center>  
 ![Example 1](e6.png){out.wide="100%"}
-<br>
+  
 ![Example 2](e2.png){out.wide="100%"}
+  
 ![Example 3](e3.png){out.wide="100%"}
-
+  
 ![Example 4](e4.png){out.wide="100%"}
-
+<center>
 
 
 

@@ -16,7 +16,7 @@ ggplot(data=housedata2, aes(x= yearchi, y=priceper,group=region,color=region)) +
 ```
 <br>
   
-## Challenge 2 Manualy control the colour of the line and point
+## Challenge 2: Manualy setting the colour of the line and point
 
 ```{r}
 head(housedata2)
