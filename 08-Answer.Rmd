@@ -4,7 +4,7 @@ I will release the answer in 5 mins.
 <br>
 Below is the answer to challenge 1:
 
-```{r}
+```{r,echo = FALSE}
 ggplot(data=housedata2, aes(x= yearchi, y=priceper,group=region,color=region)) +geom_point(size=2)+
   geom_line(size = 1)+
   scale_colour_hue(breaks=c( "London" ,"South East" ,"East of England" ,"South West","West Midlands","Yorkshire and The Humber","East Midlands","North West","North East") )+
@@ -16,7 +16,7 @@ ggplot(data=housedata2, aes(x= yearchi, y=priceper,group=region,color=region)) +
 ```
 <br>
 You also can change the legend label text by setting the labels using scale_colour_hue.
-```{r}
+```{r,echo = FALSE}
 ggplot(data=housedata2, aes(x= yearchi, y=priceper,group=region,color=region)) +geom_point(size=1.8)+
   geom_line(size = 0.8)+
   scale_colour_hue(breaks=c( "London" ,"South East" ,"East of England" ,"South West","West Midlands","Yorkshire and The Humber","East Midlands","North West","North East"),labels=c("LD","SE","EE","SW","WM","YH","EM","NW","NE") )+
@@ -28,7 +28,7 @@ ggplot(data=housedata2, aes(x= yearchi, y=priceper,group=region,color=region)) +
 ```
 <br>
 Below is the answer to challenge 2:
-```{r}
+```{r,echo = FALSE}
 ggplot(data=result1,aes(x=yearchi, y=ranknew,group=region,color=region))+
   geom_line(aes(color = region, alpha = 1), size = 0.7) +
   geom_point(data = result1[(result1$yearchi == "2009"|result1$yearchi == "2016"),],

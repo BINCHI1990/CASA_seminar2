@@ -36,6 +36,7 @@ Graphics in academic research are generally expected to be clear, concise and ea
 ![Example 3](e3.png){out.wide="100%"}
   
 ![Example 4](e4.png){out.wide="100%"}
+  
 <center>
 
 

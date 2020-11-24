@@ -19,7 +19,7 @@ ggplot(data=housedata2, aes(x= yearchi, y=priceper,group=region,color=region)) +
 
 ```{r}
 
-# Caluste the rank order of house price in each region within the same transaction year.
+# calculate the rank order of house price in each region at each transaction year.
 result1 <- data.frame()
 ms <- 0
 autodata <-0
