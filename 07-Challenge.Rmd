@@ -58,7 +58,7 @@ ggplot(data=result1,aes(x=yearchi, y=ranknew,group=region,color=region))+
              size = 5,
              label.padding = unit(0.00, "lines"), 
              label.size = 0.0)+
-  theme_bw()+ scale_x_continuous(limits = c(2007, 2018),breaks = c(2009,2010,2011,2012,2013,2014,2015,2016))+
+  theme_bw()+ scale_x_continuous(limits = c(2007, 2021),breaks = c(2009,2010,2011,2012,2013,2014,2015,2016))+
   scale_y_reverse( breaks = unique(result1$ranknew))+
   theme(legend.position = "none",axis.text = element_text(size=13))+
   theme(axis.line=element_blank(),

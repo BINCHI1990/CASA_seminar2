@@ -12,7 +12,7 @@ Now let us start by creating a scatter plot using `ggplot()`.The scatter plot is
 <br> 
   
 ### Make sure your datasets are data frames
-Since ggplot only works with **data frames**, we use `is.data.frame()`to check the whether the data is a data frame. If it is not, you need to convert it to a data frame
+Since ggplot only works with **data frames**, we use `is.data.frame()`to check the whether the data is a data frame. If it is not, you need to convert it to a data frame.
 ```{r}
 #test the data set is a data frame
 #is.data.frame(housedata1)
@@ -35,7 +35,7 @@ ggplot(housedata1,aes(x=tfarea,y=price))+
 <br> 
     
 ### Color the point
-In ggplot, additional aesthetic values can be added in based on other properties from our dataset.Given that housedata1 records transaction price in two local authorities, we can color the points differently depending on the ldnm field.
+In ggplot, additional aesthetic values can be added in based on other properties from our dataset. Given that housedata1 records transaction price in two local authorities, we can color the points differently depending on the ldnm field.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price))+
   geom_point(aes(color=ldnm))
@@ -43,7 +43,7 @@ ggplot(housedata1,aes(x=tfarea,y=price))+
 <br> 
   
 ### Add a linear regression line
-To add a linear regression line to a scatter plot, we can do this by adding `stat_smooth()`,`method = lm`  where lm means linear model i.e. use linear regression
+To add a linear regression line to a scatter plot, we can do this by adding `stat_smooth()`,`method = lm`  where `lm` means linear model i.e. use linear regression
 
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
@@ -66,7 +66,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
 ## Customizing the graph
   
 ### Change the point colour
-The colour of the points can be control with the `color` aesthetic.Below is the code to colour all the points in blue.
+The colour of the points can be control with the `color` aesthetic. Below is the code to colour all the points in blue.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9")+
@@ -76,7 +76,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
 <br>
   
 ### Change the point size
-The size of the points can be controlled with the `size` aesthetic. The default value of size is 2. The size can be set to 1.5 by the following code.
+The size of the points can be controlled with the `size` aesthetic. The default value of size is 2. The size can be set to 1.2 by the following code.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -112,7 +112,7 @@ ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
 ```
 <br>
   
-The grey area near the fit line is the confidence region.you can disabled it with `se = FALSE`
+The grey area near the fit line is the confidence region.you can disabled it with `se = FALSE`.
 ```{r}
 ggplot(housedata1,aes(x=tfarea,y=price,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
@@ -169,17 +169,20 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
   xlab("Total floor area")
 ```
-<br>   
- -   to convert the y axis to a percentage scale ,you can use `scale_y_continuous(labels = scales::percent)'  
+<br>  
+
+ -  to convert the y axis to a percentage scale ,you can use `scale_y_continuous(labels = scales::percent)'    
  <br>   
- -   to display dollars on the y axis, you can use `scale_y_continuous(labels = scales::dollar)'    
- <br>   
- -   to display euros on the y axis, you can use `scale_y_continuous(labels = scales::dollar_format(suffix = "€", prefix = ""))'    
+   
+ -  to display dollars on the y axis, you can use `scale_y_continuous(labels = scales::dollar)'      
+ <br>
+   
+ -  to display euros on the y axis, you can use `scale_y_continuous(labels = scales::dollar_format(suffix = "€", prefix = ""))'      
 <br> 
   
 #### Add x axis unit
   
-Below are listed two approaches to labelling the x axis using math notation. [Math Notation for R Plot Titles: expression, bquote, & Greek Letters](https://trinkerrstuff.wordpress.com/2018/03/15/2246/) offers more 'bquote' applications in R. 
+Below are listed two approaches to labelling the x axis using math notation. [Math Notation for R Plot Titles: expression, bquote, & Greek Letters](https://trinkerrstuff.wordpress.com/2018/03/15/2246/) offers more `bquote`applications in R. 
 ```{r}
 #method 1
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
@@ -331,7 +334,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   theme_void()
 ```
 <br>
@@ -350,7 +353,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   theme_bw()+
   theme(axis.title = element_text(size=15,color="red"))
 ```
@@ -363,7 +366,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   theme_bw()+
   theme(axis.title = element_text(size=15),axis.text = element_text(size=13,color="red"))
 ```
@@ -376,7 +379,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   theme_bw()+
   theme(axis.title = element_text(size=15),axis.text = element_text(size=13),strip.text = element_text(size=15,color="red"))
 ```
@@ -389,7 +392,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(aes(color=ldnm),size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   theme_bw()+
   theme(axis.title = element_text(size=15),axis.text = element_text(size=13),strip.text = element_text(size=15),legend.text = element_text(size=13,color="red"))
 
@@ -404,7 +407,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(aes(color=ldnm),size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   theme_bw()+
   theme(axis.title = element_text(size=15),axis.text = element_text(size=13),strip.text = element_text(size=15),legend.text = element_text(size=13),legend.title = element_text(size=15,color="red"))
 
@@ -418,7 +421,7 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(aes(color=ldnm),size = 1.2)+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
-  xlab(expression("Total floor area (" ~ m^3 ~ ")"))+
+  xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
   theme_bw()+
   theme(axis.title = element_text(size=15),axis.text = element_text(size=13),strip.text = element_text(size=15),legend.text = element_text(size=13),legend.title = element_text(size=15,color="red"))+
   labs(color = "Local authority")
@@ -482,13 +485,16 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000))+
 <br>
   
 ## Saving graphs
-TIFF files exported directly from RStudio will only achieve a resolution of 72dpi.dpi as a measure of resolution – the higher the dpi, the sharper the image. `ggsave` is used to save a 500 dpi graph from the screen to a file.
+Plots exported directly from RStudio will only achieve a resolution of 72dpi. Higher DPI (Dots per Inch) means higher resolution. `ggsave` is used to save a high resolution graph from the screen to a file.
 
 ```{r}
 #get you working directory
 getwd()
 #save the figure as tiff 
-ggsave("Figure_A.tiff",units="in", width=12, height=6, dpi=500, compression = 'lzw')  
+ggsave("Figure_A.tiff",units="in", width=12, height=6, dpi=500)  
+#ggsave("first.png",units="in", width=10, height=5, dpi=300)
+#ggsave("example.png", units = "cm",width = 30, height = 20 )
+
 ```
 <br>
   

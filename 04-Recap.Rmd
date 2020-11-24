@@ -1,6 +1,6 @@
 # Recap 
 <br>
-Graphs need to be clear, precise and efficient, below are listed some requirements of graphs:
+Graphs need to be clear, precise and efficient, below listed some requirements of graphs:
 <style>
 div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 </style>
@@ -26,7 +26,7 @@ Meanwhile,different journals or publishers have different requirements for figur
 -  [Wiley manuscript preparation guidelines](https://authorservices.wiley.com/asset/photos/electronic_artwork_guidelines.pdf)
  
 
-Graphics in academic research are generally expected to be clear, concise and easy to read. Now let’s have a look at some examples in the GIS course assignment of last year.
+Graphic in academic research is generally expected to be clear, concise and easy to read. Now let’s have a look at some examples in GIS course assignment last year.
 
 <center>  
 ![Example 1](e6.png){out.wide="100%"}
@@ -35,8 +35,7 @@ Graphics in academic research are generally expected to be clear, concise and ea
   
 ![Example 3](e3.png){out.wide="100%"}
   
-![Example 4](e4.png){out.wide="100%"}
-  
+![Example 4](e4.png){out.wide="100%"}  
 <center>
 
 
