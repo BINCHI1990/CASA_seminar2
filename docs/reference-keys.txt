@@ -1,6 +1,6 @@
 introduction
 recommend-resources
-resouces-about-ggplot2-packge
+resouces-about-ggplot2-package
 resouces-about-graphs-or-data-visualization-in-academic-research
 how-to-find-more-useful-resources
 recap
