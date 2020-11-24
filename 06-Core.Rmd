@@ -248,7 +248,6 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
   xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
-  ggtitle("Transaction price against total floor area in local authorities, 2009")+
   theme_bw()
 ```
 
@@ -260,7 +259,6 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
   xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
-  ggtitle("Transaction price against total floor area in local authorities, 2009")+
    theme_linedraw()
 ```
 
@@ -270,7 +268,6 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
   xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
-  ggtitle("Transaction price against total floor area in local authorities, 2009")+
    theme_light()
 ```
 
@@ -280,7 +277,6 @@ ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   facet_wrap(~ ldnm)+
   scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
   xlab(expression("Total floor area (" ~ m^2 ~ ")"))+
-  ggtitle("Transaction price against total floor area in local authorities, 2009")+
    theme_dark()
 ```
 
@@ -401,6 +397,11 @@ Since the aims of this satter plot is to explore the relationship between transa
 ```{r}
 # add coefficient and p value in the graph
 library(ggpubr)
+head(housedata1)
+data1<-housedata1[housedata1$laua=="E07000242",]
+cor(data1$price,data1$tfarea, method = "pearson")
+
+
 ggplot(housedata1,aes(x=tfarea,y=price/1000))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
