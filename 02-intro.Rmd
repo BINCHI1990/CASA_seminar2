@@ -13,9 +13,9 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 
 - Advanced your knowledge about ggplot2 in R 
 <br>
-- Know ten advanced customization in ggplot
+- Know how to advanced customization in ggplot
 <br>
 - Create a high resolution graph for your research
 <br>
-- Trouble-soluting by yourself
+- Trouble-shooting by yourself
 </div>

@@ -1,4 +1,4 @@
-This the first draft of the CASA0005 seminar 2
+This the documents of the CASA0005 seminar 2.
 
 - [ ] 2. Render locally with `bookdown::render_book("index.Rmd")`.
 
@@ -8,17 +8,6 @@ This the first draft of the CASA0005 seminar 2
 
 (You will need to repeat steps 2 and 4 every time you wish to update the book online.)
 
-### Edit README
-
-Once you've completed these steps, delete the content of this **README** and add a short description of your project with a link to the book URL. It would be appreciated if you add the following to the end:
 
 *This repo was initially generated from a bookdown template available here: https://github.com/jtr13/bookdown-template.*
-
-### Demo Video
-
-A demo video showing how to create a **bookdown book** following these instructions: http://bit.ly/fiveminutebookdown
-
-### Additional features
-
-Please consult the official guide to **bookdown**: https://bookdown.org/yihui/bookdown
 
