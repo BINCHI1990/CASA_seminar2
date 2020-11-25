@@ -24,7 +24,7 @@ library(ggpubr)
 </center>
 
 ## Dataset
-Let’s start by loading two datasets. The first dataset records 1641 transactions in 2009 for two local authorities in England. The second dataset records the median house price per square meter for each region in England between 2009 and 2016. These two datasets are derived from a linked house price in England ([CASA working paper213](https://www.ucl.ac.uk/bartlett/casa/publications/2019/sep/casa-working-paper-213)).
+Let’s start by loading two datasets. The first dataset records 1641 housing transactions in 2009 for two local authorities in England. The second dataset records the median house price per square meter for each region in England between 2009 and 2016. These two datasets are derived from a linked house price in England ([CASA working paper213](https://www.ucl.ac.uk/bartlett/casa/publications/2019/sep/casa-working-paper-213)).
 
 ```{r}
 # read in the first dataset
@@ -40,7 +40,7 @@ The first house price dataset contains seven fields. They separately refer to tr
 ![](data1.png)
 </center>
 <br>
-The second house price dataset contains four fields.They separately refer to the Census 2011 region code, transaction year, house price per square meter and region name.
+The second house price dataset contains four fields. They separately refer to the Census 2011 region code, transaction year, house price per square meter and region name.
 <center>
 
 ![](data2.png)
