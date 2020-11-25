@@ -203,35 +203,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let us move to the challenge part of the seminar to examine your understanding. Below are two graphs created by ggplot() based on housedata2.</p>
 <div id="challenge-1-reorder-the-items-in-legend" class="section level2">
 <h2><span class="header-section-number">6.1</span> Challenge 1: reorder the items in legend</h2>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="challenges.html#cb61-1"></a><span class="kw">ggplot</span>(<span class="dt">data=</span>housedata2, <span class="kw">aes</span>(<span class="dt">x=</span> yearchi, <span class="dt">y=</span>priceper,<span class="dt">group=</span>region,<span class="dt">color=</span>region)) <span class="op">+</span><span class="kw">geom_point</span>(<span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span></span>
-<span id="cb61-2"><a href="challenges.html#cb61-2"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">size =</span> <span class="dv">1</span>)<span class="op">+</span></span>
-<span id="cb61-3"><a href="challenges.html#cb61-3"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
-<span id="cb61-4"><a href="challenges.html#cb61-4"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>), <span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">11</span>),<span class="dt">legend.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>))<span class="op">+</span></span>
-<span id="cb61-5"><a href="challenges.html#cb61-5"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="kw">bquote</span>(<span class="st">&quot;House price ( £/&quot;</span><span class="op">~</span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span><span class="kw">xlab</span>(<span class="st">&quot;Year&quot;</span>)<span class="op">+</span></span>
-<span id="cb61-6"><a href="challenges.html#cb61-6"></a><span class="st">  </span><span class="kw">guides</span>(<span class="dt">color=</span><span class="kw">guide_legend</span>(<span class="st">&quot;Region&quot;</span>)) <span class="op">+</span></span>
-<span id="cb61-7"><a href="challenges.html#cb61-7"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">labels =</span> scales<span class="op">::</span>comma,)<span class="op">+</span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">2009</span>,<span class="dv">2010</span>,<span class="dv">2011</span>,<span class="dv">2012</span>,<span class="dv">2013</span>,<span class="dv">2014</span>,<span class="dv">2015</span>,<span class="dv">2016</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="challenges.html#cb60-1"></a><span class="kw">ggplot</span>(<span class="dt">data=</span>housedata2, <span class="kw">aes</span>(<span class="dt">x=</span> yearchi, <span class="dt">y=</span>priceper,<span class="dt">group=</span>region,<span class="dt">color=</span>region)) <span class="op">+</span><span class="kw">geom_point</span>(<span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span></span>
+<span id="cb60-2"><a href="challenges.html#cb60-2"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">size =</span> <span class="dv">1</span>)<span class="op">+</span></span>
+<span id="cb60-3"><a href="challenges.html#cb60-3"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span></span>
+<span id="cb60-4"><a href="challenges.html#cb60-4"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>), <span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>),<span class="dt">strip.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">15</span>),<span class="dt">legend.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">11</span>),<span class="dt">legend.title =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>))<span class="op">+</span></span>
+<span id="cb60-5"><a href="challenges.html#cb60-5"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="kw">bquote</span>(<span class="st">&quot;House price ( £/&quot;</span><span class="op">~</span>m<span class="op">^</span><span class="dv">2</span> <span class="op">~</span><span class="st"> &quot;)&quot;</span>))<span class="op">+</span><span class="kw">xlab</span>(<span class="st">&quot;Year&quot;</span>)<span class="op">+</span></span>
+<span id="cb60-6"><a href="challenges.html#cb60-6"></a><span class="st">  </span><span class="kw">guides</span>(<span class="dt">color=</span><span class="kw">guide_legend</span>(<span class="st">&quot;Region&quot;</span>)) <span class="op">+</span></span>
+<span id="cb60-7"><a href="challenges.html#cb60-7"></a><span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">labels =</span> scales<span class="op">::</span>comma,)<span class="op">+</span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">2009</span>,<span class="dv">2010</span>,<span class="dv">2011</span>,<span class="dv">2012</span>,<span class="dv">2013</span>,<span class="dv">2014</span>,<span class="dv">2015</span>,<span class="dv">2016</span>))</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-41-1.png" width="672" />
 <br></p>
 </div>
 <div id="challenge-2-manualy-setting-the-colour-of-the-line-and-point" class="section level2">
 <h2><span class="header-section-number">6.2</span> Challenge 2: Manualy setting the colour of the line and point</h2>
-<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="challenges.html#cb62-1"></a><span class="co"># calculate the rank order of house price in each region at each transaction year.</span></span>
-<span id="cb62-2"><a href="challenges.html#cb62-2"></a>result1 &lt;-<span class="st"> </span><span class="kw">data.frame</span>()</span>
-<span id="cb62-3"><a href="challenges.html#cb62-3"></a>ms &lt;-<span class="st"> </span><span class="dv">0</span></span>
-<span id="cb62-4"><a href="challenges.html#cb62-4"></a>autodata &lt;-<span class="dv">0</span></span>
-<span id="cb62-5"><a href="challenges.html#cb62-5"></a>j &lt;-<span class="st"> </span><span class="dv">1</span></span>
-<span id="cb62-6"><a href="challenges.html#cb62-6"></a>list &lt;-<span class="kw">unique</span>(housedata2<span class="op">$</span>yearchi)</span>
-<span id="cb62-7"><a href="challenges.html#cb62-7"></a><span class="cf">for</span>(ms <span class="cf">in</span> list)</span>
-<span id="cb62-8"><a href="challenges.html#cb62-8"></a>{</span>
-<span id="cb62-9"><a href="challenges.html#cb62-9"></a>  <span class="kw">print</span>(ms)</span>
-<span id="cb62-10"><a href="challenges.html#cb62-10"></a>  <span class="kw">print</span>(j)</span>
-<span id="cb62-11"><a href="challenges.html#cb62-11"></a>  autodata &lt;-<span class="st"> </span>housedata2[housedata2<span class="op">$</span>yearchi<span class="op">==</span>ms,]</span>
-<span id="cb62-12"><a href="challenges.html#cb62-12"></a>  autodata<span class="op">$</span>ranknew &lt;-<span class="st"> </span><span class="kw">rank</span>(<span class="op">-</span>autodata<span class="op">$</span>priceper)</span>
-<span id="cb62-13"><a href="challenges.html#cb62-13"></a>  autodata<span class="op">$</span>ranknew1 &lt;-<span class="st"> </span><span class="kw">rank</span>(autodata<span class="op">$</span>priceper)</span>
-<span id="cb62-14"><a href="challenges.html#cb62-14"></a>  result1 &lt;-<span class="st"> </span><span class="kw">rbind</span>(result1,autodata)</span>
-<span id="cb62-15"><a href="challenges.html#cb62-15"></a>  j &lt;-<span class="st"> </span>j<span class="op">+</span><span class="dv">1</span></span>
-<span id="cb62-16"><a href="challenges.html#cb62-16"></a>  </span>
-<span id="cb62-17"><a href="challenges.html#cb62-17"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="challenges.html#cb61-1"></a><span class="co"># calculate the rank order of house price in each region at each transaction year.</span></span>
+<span id="cb61-2"><a href="challenges.html#cb61-2"></a>result1 &lt;-<span class="st"> </span><span class="kw">data.frame</span>()</span>
+<span id="cb61-3"><a href="challenges.html#cb61-3"></a>ms &lt;-<span class="st"> </span><span class="dv">0</span></span>
+<span id="cb61-4"><a href="challenges.html#cb61-4"></a>autodata &lt;-<span class="dv">0</span></span>
+<span id="cb61-5"><a href="challenges.html#cb61-5"></a>j &lt;-<span class="st"> </span><span class="dv">1</span></span>
+<span id="cb61-6"><a href="challenges.html#cb61-6"></a>list &lt;-<span class="kw">unique</span>(housedata2<span class="op">$</span>yearchi)</span>
+<span id="cb61-7"><a href="challenges.html#cb61-7"></a><span class="cf">for</span>(ms <span class="cf">in</span> list)</span>
+<span id="cb61-8"><a href="challenges.html#cb61-8"></a>{</span>
+<span id="cb61-9"><a href="challenges.html#cb61-9"></a>  <span class="kw">print</span>(ms)</span>
+<span id="cb61-10"><a href="challenges.html#cb61-10"></a>  <span class="kw">print</span>(j)</span>
+<span id="cb61-11"><a href="challenges.html#cb61-11"></a>  autodata &lt;-<span class="st"> </span>housedata2[housedata2<span class="op">$</span>yearchi<span class="op">==</span>ms,]</span>
+<span id="cb61-12"><a href="challenges.html#cb61-12"></a>  autodata<span class="op">$</span>ranknew &lt;-<span class="st"> </span><span class="kw">rank</span>(<span class="op">-</span>autodata<span class="op">$</span>priceper)</span>
+<span id="cb61-13"><a href="challenges.html#cb61-13"></a>  autodata<span class="op">$</span>ranknew1 &lt;-<span class="st"> </span><span class="kw">rank</span>(autodata<span class="op">$</span>priceper)</span>
+<span id="cb61-14"><a href="challenges.html#cb61-14"></a>  result1 &lt;-<span class="st"> </span><span class="kw">rbind</span>(result1,autodata)</span>
+<span id="cb61-15"><a href="challenges.html#cb61-15"></a>  j &lt;-<span class="st"> </span>j<span class="op">+</span><span class="dv">1</span></span>
+<span id="cb61-16"><a href="challenges.html#cb61-16"></a>  </span>
+<span id="cb61-17"><a href="challenges.html#cb61-17"></a>}</span></code></pre></div>
 <pre><code>## [1] 2009
 ## [1] 1
 ## [1] 2012
@@ -248,7 +248,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [1] 7
 ## [1] 2013
 ## [1] 8</code></pre>
-<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="challenges.html#cb64-1"></a><span class="kw">head</span>(result1)</span></code></pre></div>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="challenges.html#cb63-1"></a><span class="kw">head</span>(result1)</span></code></pre></div>
 <pre><code>##          gor yearchi priceper                   region ranknew ranknew1
 ## 1  E12000001    2009 1425.943               North East       9        1
 ## 13 E12000002    2009 1554.641               North West       7        3
@@ -256,39 +256,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 32 E12000004    2009 1528.438            East Midlands       8        2
 ## 35 E12000005    2009 1686.191            West Midlands       5        5
 ## 44 E12000006    2009 2104.026          East of England       3        7</code></pre>
-<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="challenges.html#cb66-1"></a><span class="co"># Plot house price rank order change between 2009 and 2016</span></span>
-<span id="cb66-2"><a href="challenges.html#cb66-2"></a></span>
-<span id="cb66-3"><a href="challenges.html#cb66-3"></a><span class="kw">ggplot</span>(<span class="dt">data=</span>result1,<span class="kw">aes</span>(<span class="dt">x=</span>yearchi, <span class="dt">y=</span>ranknew,<span class="dt">group=</span>region,<span class="dt">color=</span>region))<span class="op">+</span></span>
-<span id="cb66-4"><a href="challenges.html#cb66-4"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">color =</span> region, <span class="dt">alpha =</span> <span class="dv">1</span>), <span class="dt">size =</span> <span class="fl">0.7</span>) <span class="op">+</span></span>
-<span id="cb66-5"><a href="challenges.html#cb66-5"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data =</span> result1[(result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2009&quot;</span><span class="op">|</span>result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2016&quot;</span>),],</span>
-<span id="cb66-6"><a href="challenges.html#cb66-6"></a>             <span class="kw">aes</span>(<span class="dt">x=</span>yearchi, <span class="dt">y=</span>ranknew,<span class="dt">group=</span>region,<span class="dt">color =</span> region),</span>
-<span id="cb66-7"><a href="challenges.html#cb66-7"></a>             <span class="dt">size =</span> <span class="dv">8</span>)<span class="op">+</span></span>
-<span id="cb66-8"><a href="challenges.html#cb66-8"></a><span class="st">  </span><span class="kw">geom_text</span>(<span class="dt">data =</span> result1[result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2016&quot;</span>,], </span>
-<span id="cb66-9"><a href="challenges.html#cb66-9"></a>            <span class="kw">aes</span>(<span class="dt">label =</span> region) , </span>
-<span id="cb66-10"><a href="challenges.html#cb66-10"></a>            <span class="dt">position =</span> <span class="kw">position_nudge</span>(<span class="dt">x =</span> <span class="fl">0.4</span>),</span>
-<span id="cb66-11"><a href="challenges.html#cb66-11"></a>            <span class="dt">hjust =</span> <span class="dv">0</span>,</span>
-<span id="cb66-12"><a href="challenges.html#cb66-12"></a>            <span class="dt">size =</span> <span class="dv">5</span>) <span class="op">+</span></span>
-<span id="cb66-13"><a href="challenges.html#cb66-13"></a><span class="st">  </span><span class="kw">geom_label</span>(<span class="dt">data =</span> result1[(result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2009&quot;</span><span class="op">|</span>result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2016&quot;</span>),],</span>
-<span id="cb66-14"><a href="challenges.html#cb66-14"></a>             <span class="kw">aes</span>(<span class="dt">label =</span> ranknew), </span>
-<span id="cb66-15"><a href="challenges.html#cb66-15"></a>             <span class="dt">color=</span><span class="st">&quot;white&quot;</span>,</span>
-<span id="cb66-16"><a href="challenges.html#cb66-16"></a>             <span class="dt">alpha =</span> <span class="dv">0</span>,</span>
-<span id="cb66-17"><a href="challenges.html#cb66-17"></a>             <span class="dt">size =</span> <span class="dv">5</span>,</span>
-<span id="cb66-18"><a href="challenges.html#cb66-18"></a>             <span class="dt">label.padding =</span> <span class="kw">unit</span>(<span class="fl">0.00</span>, <span class="st">&quot;lines&quot;</span>), </span>
-<span id="cb66-19"><a href="challenges.html#cb66-19"></a>             <span class="dt">label.size =</span> <span class="fl">0.0</span>)<span class="op">+</span></span>
-<span id="cb66-20"><a href="challenges.html#cb66-20"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span><span class="st"> </span><span class="kw">scale_x_continuous</span>(<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">2007</span>, <span class="dv">2021</span>),<span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">2009</span>,<span class="dv">2010</span>,<span class="dv">2011</span>,<span class="dv">2012</span>,<span class="dv">2013</span>,<span class="dv">2014</span>,<span class="dv">2015</span>,<span class="dv">2016</span>))<span class="op">+</span></span>
-<span id="cb66-21"><a href="challenges.html#cb66-21"></a><span class="st">  </span><span class="kw">scale_y_reverse</span>( <span class="dt">breaks =</span> <span class="kw">unique</span>(result1<span class="op">$</span>ranknew))<span class="op">+</span></span>
-<span id="cb66-22"><a href="challenges.html#cb66-22"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>,<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>))<span class="op">+</span></span>
-<span id="cb66-23"><a href="challenges.html#cb66-23"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.line=</span><span class="kw">element_blank</span>(),</span>
-<span id="cb66-24"><a href="challenges.html#cb66-24"></a>      <span class="dt">axis.text.y=</span><span class="kw">element_blank</span>(),</span>
-<span id="cb66-25"><a href="challenges.html#cb66-25"></a>      <span class="dt">axis.ticks=</span><span class="kw">element_blank</span>(),</span>
-<span id="cb66-26"><a href="challenges.html#cb66-26"></a>      <span class="dt">axis.title.x=</span><span class="kw">element_blank</span>(),</span>
-<span id="cb66-27"><a href="challenges.html#cb66-27"></a>      <span class="dt">axis.title.y=</span><span class="kw">element_blank</span>(),</span>
-<span id="cb66-28"><a href="challenges.html#cb66-28"></a>      <span class="dt">panel.background=</span><span class="kw">element_blank</span>(),</span>
-<span id="cb66-29"><a href="challenges.html#cb66-29"></a>      <span class="dt">panel.border=</span><span class="kw">element_blank</span>(),</span>
-<span id="cb66-30"><a href="challenges.html#cb66-30"></a>      <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(),</span>
-<span id="cb66-31"><a href="challenges.html#cb66-31"></a>      <span class="dt">panel.grid.minor.x=</span><span class="kw">element_blank</span>(),</span>
-<span id="cb66-32"><a href="challenges.html#cb66-32"></a>      <span class="dt">panel.grid.minor.y=</span><span class="kw">element_blank</span>(),</span>
-<span id="cb66-33"><a href="challenges.html#cb66-33"></a>      <span class="dt">plot.background=</span><span class="kw">element_blank</span>())</span></code></pre></div>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="challenges.html#cb65-1"></a><span class="co"># Plot house price rank order change between 2009 and 2016</span></span>
+<span id="cb65-2"><a href="challenges.html#cb65-2"></a></span>
+<span id="cb65-3"><a href="challenges.html#cb65-3"></a><span class="kw">ggplot</span>(<span class="dt">data=</span>result1,<span class="kw">aes</span>(<span class="dt">x=</span>yearchi, <span class="dt">y=</span>ranknew,<span class="dt">group=</span>region,<span class="dt">color=</span>region))<span class="op">+</span></span>
+<span id="cb65-4"><a href="challenges.html#cb65-4"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">color =</span> region, <span class="dt">alpha =</span> <span class="dv">1</span>), <span class="dt">size =</span> <span class="fl">0.7</span>) <span class="op">+</span></span>
+<span id="cb65-5"><a href="challenges.html#cb65-5"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data =</span> result1[(result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2009&quot;</span><span class="op">|</span>result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2016&quot;</span>),],</span>
+<span id="cb65-6"><a href="challenges.html#cb65-6"></a>             <span class="kw">aes</span>(<span class="dt">x=</span>yearchi, <span class="dt">y=</span>ranknew,<span class="dt">group=</span>region,<span class="dt">color =</span> region),</span>
+<span id="cb65-7"><a href="challenges.html#cb65-7"></a>             <span class="dt">size =</span> <span class="dv">8</span>)<span class="op">+</span></span>
+<span id="cb65-8"><a href="challenges.html#cb65-8"></a><span class="st">  </span><span class="kw">geom_text</span>(<span class="dt">data =</span> result1[result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2016&quot;</span>,], </span>
+<span id="cb65-9"><a href="challenges.html#cb65-9"></a>            <span class="kw">aes</span>(<span class="dt">label =</span> region) , </span>
+<span id="cb65-10"><a href="challenges.html#cb65-10"></a>            <span class="dt">position =</span> <span class="kw">position_nudge</span>(<span class="dt">x =</span> <span class="fl">0.4</span>),</span>
+<span id="cb65-11"><a href="challenges.html#cb65-11"></a>            <span class="dt">hjust =</span> <span class="dv">0</span>,</span>
+<span id="cb65-12"><a href="challenges.html#cb65-12"></a>            <span class="dt">size =</span> <span class="dv">5</span>) <span class="op">+</span></span>
+<span id="cb65-13"><a href="challenges.html#cb65-13"></a><span class="st">  </span><span class="kw">geom_label</span>(<span class="dt">data =</span> result1[(result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2009&quot;</span><span class="op">|</span>result1<span class="op">$</span>yearchi <span class="op">==</span><span class="st"> &quot;2016&quot;</span>),],</span>
+<span id="cb65-14"><a href="challenges.html#cb65-14"></a>             <span class="kw">aes</span>(<span class="dt">label =</span> ranknew), </span>
+<span id="cb65-15"><a href="challenges.html#cb65-15"></a>             <span class="dt">color=</span><span class="st">&quot;white&quot;</span>,</span>
+<span id="cb65-16"><a href="challenges.html#cb65-16"></a>             <span class="dt">alpha =</span> <span class="dv">0</span>,</span>
+<span id="cb65-17"><a href="challenges.html#cb65-17"></a>             <span class="dt">size =</span> <span class="dv">5</span>,</span>
+<span id="cb65-18"><a href="challenges.html#cb65-18"></a>             <span class="dt">label.padding =</span> <span class="kw">unit</span>(<span class="fl">0.00</span>, <span class="st">&quot;lines&quot;</span>), </span>
+<span id="cb65-19"><a href="challenges.html#cb65-19"></a>             <span class="dt">label.size =</span> <span class="fl">0.0</span>)<span class="op">+</span></span>
+<span id="cb65-20"><a href="challenges.html#cb65-20"></a><span class="st">  </span><span class="kw">theme_bw</span>()<span class="op">+</span><span class="st"> </span><span class="kw">scale_x_continuous</span>(<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">2007</span>, <span class="dv">2021</span>),<span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">2009</span>,<span class="dv">2010</span>,<span class="dv">2011</span>,<span class="dv">2012</span>,<span class="dv">2013</span>,<span class="dv">2014</span>,<span class="dv">2015</span>,<span class="dv">2016</span>))<span class="op">+</span></span>
+<span id="cb65-21"><a href="challenges.html#cb65-21"></a><span class="st">  </span><span class="kw">scale_y_reverse</span>( <span class="dt">breaks =</span> <span class="kw">unique</span>(result1<span class="op">$</span>ranknew))<span class="op">+</span></span>
+<span id="cb65-22"><a href="challenges.html#cb65-22"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>,<span class="dt">axis.text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">13</span>))<span class="op">+</span></span>
+<span id="cb65-23"><a href="challenges.html#cb65-23"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.line=</span><span class="kw">element_blank</span>(),</span>
+<span id="cb65-24"><a href="challenges.html#cb65-24"></a>      <span class="dt">axis.text.y=</span><span class="kw">element_blank</span>(),</span>
+<span id="cb65-25"><a href="challenges.html#cb65-25"></a>      <span class="dt">axis.ticks=</span><span class="kw">element_blank</span>(),</span>
+<span id="cb65-26"><a href="challenges.html#cb65-26"></a>      <span class="dt">axis.title.x=</span><span class="kw">element_blank</span>(),</span>
+<span id="cb65-27"><a href="challenges.html#cb65-27"></a>      <span class="dt">axis.title.y=</span><span class="kw">element_blank</span>(),</span>
+<span id="cb65-28"><a href="challenges.html#cb65-28"></a>      <span class="dt">panel.background=</span><span class="kw">element_blank</span>(),</span>
+<span id="cb65-29"><a href="challenges.html#cb65-29"></a>      <span class="dt">panel.border=</span><span class="kw">element_blank</span>(),</span>
+<span id="cb65-30"><a href="challenges.html#cb65-30"></a>      <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb65-31"><a href="challenges.html#cb65-31"></a>      <span class="dt">panel.grid.minor.x=</span><span class="kw">element_blank</span>(),</span>
+<span id="cb65-32"><a href="challenges.html#cb65-32"></a>      <span class="dt">panel.grid.minor.y=</span><span class="kw">element_blank</span>(),</span>
+<span id="cb65-33"><a href="challenges.html#cb65-33"></a>      <span class="dt">plot.background=</span><span class="kw">element_blank</span>())</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-42-1.png" width="672" /></p>
 
 </div>

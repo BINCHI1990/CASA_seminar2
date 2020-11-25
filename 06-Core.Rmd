@@ -243,10 +243,11 @@ You can follow the same step for your y axis.
 ggplot(housedata1,aes(x=tfarea,y=price/1000,group=ldnm))+
   geom_point(color="#56b4e9",size = 1.2)+
   facet_wrap(~ ldnm)+
-  scale_y_continuous(name = "Transaction Price (in £1000s)",labels = scales::comma)+
+  scale_y_continuous(name = "Transaction Price (in £1000s)",limits = c(0, 1200),labels = scales::comma)+
+  ylab("Transaction Price (in £1000s)")+
   xlab(bquote("Total floor area (" ~ m^2 ~ ")"))+
-  scale_x_continuous(breaks = seq(50,300,50),limits = c(0, 300))+
-  scale_y_continuous(limits = c(0, 1200))
+  scale_x_continuous(breaks = seq(50,300,50),limits = c(0, 300))
+ 
 ```
 <br>
   
@@ -499,6 +500,15 @@ ggsave("Figure_A.tiff",units="in", width=12, height=6, dpi=500)
 <br>
   
 ## Extensions
-
-[12 Extensions to ggplot2 for More Powerful R Visualizations](https://mode.com/blog/r-ggplot-extension-packages/)
-
+<br>
+ 
+ -   [12 Extensions to ggplot2 for More Powerful R Visualizations](https://mode.com/blog/r-ggplot-extension-packages/)
+ <br>
+  
+ -   [patchwork: combine separate ggplots into the same graphic](https://patchwork.data-imaginist.com/)
+ <br>
+  
+ -   [How to combine Multiple ggplot Plots to make Publication-ready Plots](https://www.r-bloggers.com/2019/01/how-to-combine-multiple-ggplot-plots-to-make-publication-ready-plots/)
+<br>
+   
+ -   [ggplot2 - Easy Way to Mix Multiple Graphs on The Same Page](http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/81-ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page/)    

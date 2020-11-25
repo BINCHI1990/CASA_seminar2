@@ -24,7 +24,11 @@ Data visualisation is the visual representation of patterns in data. An efficien
 <br>
  -  [Data visualization beginner's guide: a definition, examples, and learning resources](https://www.tableau.com/learn/articles/data-visualization)
 <br>
-
+ -  [From Data to Viz](https://www.data-to-viz.com/)
+<br>
+ -  [The R Graph Gallery](https://www.r-graph-gallery.com/index.html)
+<br>
+  
 ## How to find more useful resources 
   
  -  [GOOGLE](https://www.google.com/)
