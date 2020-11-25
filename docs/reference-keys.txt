@@ -5,8 +5,8 @@ resouces-for-graphs-or-data-visualization-in-academic-research
 how-to-find-more-useful-resources
 recap
 getting-started
-installing-ggplot2-package
-loading-ggplot2-package
+installing-packages
+loading-packages
 dataset
 graphics-with-ggplot2
 basic-components-of-a-ggplot2-plot

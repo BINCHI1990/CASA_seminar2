@@ -1,23 +1,23 @@
 # Getting started
   
-## Installing ggplot2 package
+## Installing packages
 
-If you have installed ggplot2 package already, you can jump to the next step.
+If you have installed ggplot2 and ggpubr packages already, you can jump to the next step.
 ```{r}
 #install.packages("ggplot2")
 #install.packages("ggpubr")
 ```
 
 
-## Loading ggplot2 package
+## Loading packages
 Load the packages for today's seminar.  
 ```{r}
-#load the package for this seminar
+#load the packages for this seminar
 library(ggplot2)
 library(ggpubr)
 ```
 
-**Note:** Once you have loaded the package successfully, there will be a check mark display before the package under your Packages tab at the bottom right pane.
+**Note:** Once you have loaded the package successfully, there will be a check mark display before the package under your packages tab at the bottom right pane.
 <center>
 
 ![](loadpackage.png)
